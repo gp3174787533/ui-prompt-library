@@ -34,7 +34,8 @@
         "id": "saas-styles",
         "name": "SaaS 后台 · 风格组"
       },
-      "variant_label": "深色极简仪表盘"
+      "variant_label": "深色极简仪表盘",
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "saas-admin-light",
@@ -57,7 +58,8 @@
         "id": "saas-styles",
         "name": "SaaS 后台 · 风格组"
       },
-      "variant_label": "浅色企业级管理"
+      "variant_label": "浅色企业级管理",
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "saas-kanban",
@@ -79,7 +81,8 @@
         "id": "saas-styles",
         "name": "SaaS 后台 · 风格组"
       },
-      "variant_label": "卡片看板协作"
+      "variant_label": "卡片看板协作",
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "mobile-fintech",
@@ -102,7 +105,8 @@
         "id": "mobile-styles",
         "name": "移动端 App · 风格组"
       },
-      "variant_label": "深色高级感金融"
+      "variant_label": "深色高级感金融",
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "mobile-health",
@@ -125,7 +129,8 @@
         "id": "mobile-styles",
         "name": "移动端 App · 风格组"
       },
-      "variant_label": "清新浅色健康"
+      "variant_label": "清新浅色健康",
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "mobile-food",
@@ -148,7 +153,8 @@
         "id": "mobile-styles",
         "name": "移动端 App · 风格组"
       },
-      "variant_label": "暖色食欲感外卖"
+      "variant_label": "暖色食欲感外卖",
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "landing-ai-product",
@@ -171,7 +177,8 @@
         "id": "landing-styles",
         "name": "落地页官网 · 风格组"
       },
-      "variant_label": "深色科技渐变"
+      "variant_label": "深色科技渐变",
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "landing-editorial",
@@ -194,7 +201,8 @@
         "id": "landing-styles",
         "name": "落地页官网 · 风格组"
       },
-      "variant_label": "杂志极简黑白"
+      "variant_label": "杂志极简黑白",
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "landing-brutalist",
@@ -216,7 +224,8 @@
         "id": "landing-styles",
         "name": "落地页官网 · 风格组"
       },
-      "variant_label": "新丑风粗野主义"
+      "variant_label": "新丑风粗野主义",
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "ecom-fashion",
@@ -233,7 +242,8 @@
       "tools": [
         "v0",
         "即梦"
-      ]
+      ],
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "ecom-dashboard-store",
@@ -251,7 +261,8 @@
         "v0",
         "Cursor",
         "Qoder"
-      ]
+      ],
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "datav-screen",
@@ -274,7 +285,8 @@
         "id": "datav-styles",
         "name": "数据可视化 · 风格组"
       },
-      "variant_label": "深蓝发光大屏"
+      "variant_label": "深蓝发光大屏",
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "datav-report",
@@ -296,7 +308,8 @@
         "id": "datav-styles",
         "name": "数据可视化 · 风格组"
       },
-      "variant_label": "浅色信息图报告"
+      "variant_label": "浅色信息图报告",
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "ai-chat-app",
@@ -314,7 +327,8 @@
         "v0",
         "Lovable",
         "Cursor"
-      ]
+      ],
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "ai-image-tool",
@@ -331,7 +345,8 @@
       "tools": [
         "v0",
         "Cursor"
-      ]
+      ],
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "banking-web",
@@ -348,7 +363,8 @@
       "tools": [
         "v0",
         "Qoder"
-      ]
+      ],
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "social-feed",
@@ -365,7 +381,8 @@
       "tools": [
         "v0",
         "即梦"
-      ]
+      ],
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "music-player",
@@ -383,7 +400,8 @@
         "v0",
         "Midjourney",
         "即梦"
-      ]
+      ],
+      "added_at": "2026-11-17T20:12:39+08:00"
     },
     {
       "id": "detail-spacing-rhythm",
@@ -409,7 +427,8 @@
         "result": "pass",
         "note": "生成图为项目管理后台：分组间距分明、卡片内边距一致、标题与主按钮周围留白充足，通过"
       },
-      "preview_type": "static"
+      "preview_type": "static",
+      "added_at": "2026-11-17T20:13:39+08:00"
     },
     {
       "id": "detail-color-restraint",
@@ -435,7 +454,8 @@
         "result": "pass",
         "note": "生成图为电商后台 ShopAdmin：仅蓝色主色+中性灰，红色只出现在错误徽章，通过"
       },
-      "preview_type": "static"
+      "preview_type": "static",
+      "added_at": "2026-11-17T20:13:39+08:00"
     },
     {
       "id": "detail-feizhang-five",
@@ -461,7 +481,8 @@
         "result": "pass",
         "note": "生成图为带侧边栏的分析后台：KPI 大数字、折线图、表格、嵌套卡片柔和阴影，五件套特征可见，通过"
       },
-      "preview_type": "static"
+      "preview_type": "static",
+      "added_at": "2026-11-17T20:20:15+08:00"
     },
     {
       "id": "detail-concentric-radius",
@@ -486,7 +507,8 @@
         "result": "pass",
         "note": "生成图为嵌套卡片示意图：外层 24px / 内层 8px 并标注公式，外内圆角平行顺滑，通过"
       },
-      "preview_type": "static"
+      "preview_type": "static",
+      "added_at": "2026-11-17T20:20:15+08:00"
     }
   ]
 }
