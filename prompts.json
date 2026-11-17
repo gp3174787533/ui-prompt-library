@@ -1,0 +1,597 @@
+{
+  "version": 1,
+  "updated": "2026-11-17",
+  "categories": [
+    "AI产品",
+    "SaaS后台",
+    "内容社交",
+    "数据大屏",
+    "电商零售",
+    "移动端App",
+    "细节优化",
+    "落地页官网",
+    "金融"
+  ],
+  "prompts": [
+    {
+      "id": "saas-dashboard-linear",
+      "title": "Linear 风 SaaS 数据后台",
+      "category": "SaaS后台",
+      "styles": [
+        "极简",
+        "深色",
+        "专业"
+      ],
+      "scenario": "项目管理/协作类 SaaS 首页仪表盘",
+      "prompt": "Design a clean SaaS analytics dashboard in the style of Linear: dark sidebar navigation, light content area, compact data tables, KPI cards with sparklines, a line chart and a bar chart, status badges, subtle borders instead of heavy shadows, 8px spacing system, Inter font, primary color indigo #5E6AD2, rounded-lg corners, professional and information-dense but uncluttered.",
+      "prompt_zh": "Linear 风极简 SaaS 仪表盘：深色侧边栏、紧凑表格、KPI 卡片+迷你趋势图、状态徽章、细边框少阴影、靛蓝主色、信息密集但不乱。",
+      "tools": [
+        "v0",
+        "Lovable",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "saas-admin-light",
+      "title": "浅色企业管理系统",
+      "category": "SaaS后台",
+      "styles": [
+        "浅色",
+        "企业级",
+        "表格密集"
+      ],
+      "scenario": "订单/用户/权限等后台管理 CRUD",
+      "prompt": "Build an enterprise admin panel UI: top header with search and user avatar, left collapsible menu, breadcrumb, filter bar with date range and dropdowns, a paginated data table with row selection, status pills and action buttons, a slide-over detail drawer and a modal form. White and light gray palette, blue primary #1677FF, clear hierarchy, designed for daily heavy use, no decorative gradients.",
+      "prompt_zh": "企业级浅色后台：顶栏+可折叠菜单、筛选条、分页表格、状态标签、详情抽屉和弹窗表单，蓝色主色，耐看实用不要花哨渐变。",
+      "tools": [
+        "v0",
+        "Cursor",
+        "Qoder"
+      ]
+    },
+    {
+      "id": "saas-kanban",
+      "title": "看板协作工具",
+      "category": "SaaS后台",
+      "styles": [
+        "卡片",
+        "协作",
+        "彩色标签"
+      ],
+      "scenario": "任务看板/项目进度管理",
+      "prompt": "Create a Kanban project board UI like Trello/Linear: horizontal columns (Backlog, In Progress, Review, Done) with drag-ready cards, each card shows title, colored labels, assignee avatars, due date and comment count; top bar with board switcher, filter and members; soft gray background #F4F5F7, white cards with subtle shadow, friendly but professional.",
+      "prompt_zh": "看板协作 UI：横向列+可拖拽卡片，卡片带彩色标签、成员头像、截止日期，浅灰底白卡片。",
+      "tools": [
+        "v0",
+        "Lovable"
+      ]
+    },
+    {
+      "id": "mobile-fintech",
+      "title": "移动端金融 App",
+      "category": "移动端App",
+      "styles": [
+        "深色",
+        "高级感",
+        "数字突出"
+      ],
+      "scenario": "钱包/记账/理财 App 首页",
+      "prompt": "Design a premium mobile fintech app home screen (390x844): dark navy background, total balance in large bold numerals, income/expense summary, quick action row (transfer, pay, top-up, more), a spending chart card, recent transactions list with merchant icons. Gold accent #D4AF37 used sparingly, glassmorphism cards, smooth rounded corners 20px, trustworthy and luxurious feel.",
+      "prompt_zh": "高级感金融 App 首页：深海军蓝底、余额大数字、快捷操作、支出图表卡、交易列表，金色点缀+玻璃拟态卡片。",
+      "tools": [
+        "v0",
+        "Midjourney",
+        "即梦"
+      ]
+    },
+    {
+      "id": "mobile-health",
+      "title": "健康运动 App",
+      "category": "移动端App",
+      "styles": [
+        "清新",
+        "圆环",
+        "浅色"
+      ],
+      "scenario": "运动记录/健康数据 App",
+      "prompt": "Create a fresh mobile health app UI: light background, greeting header with avatar, activity rings showing steps/calories/distance, weekly bar chart, sleep and heart-rate cards with soft gradients (mint green, sky blue, lavender), large rounded cards, playful micro-illustrations, SF Pro style typography, encouraging and clean.",
+      "prompt_zh": "清新健康 App：活动圆环、周数据柱状图、睡眠/心率卡片，薄荷绿+天蓝柔和渐变，大圆角，干净治愈。",
+      "tools": [
+        "v0",
+        "Lovable",
+        "即梦"
+      ]
+    },
+    {
+      "id": "mobile-food",
+      "title": "外卖点餐 App",
+      "category": "移动端App",
+      "styles": [
+        "食欲感",
+        "暖色",
+        "图片主导"
+      ],
+      "scenario": "外卖/点餐类 App 首页与点单页",
+      "prompt": "Design a food delivery app: warm off-white background, location header and search bar, horizontal category chips with food icons, large appetizing food photo cards with rating, delivery time and price, sticky cart bar at bottom showing total and checkout button. Orange-red primary #FF4D2E, big imagery, minimal text, fast scanning layout for hungry users.",
+      "prompt_zh": "外卖 App：大图食物卡片、分类 chips、评分/时效/价格，底部吸底购物车条，橙红主色，食欲感优先、文字极少。",
+      "tools": [
+        "v0",
+        "即梦",
+        "Midjourney"
+      ]
+    },
+    {
+      "id": "landing-ai-product",
+      "title": "AI 产品落地页",
+      "category": "落地页官网",
+      "styles": [
+        "深色",
+        "渐变光效",
+        "科技感"
+      ],
+      "scenario": "AI 工具/SaaS 产品官网首屏",
+      "prompt": "Design a high-converting landing page hero for an AI product: dark background with subtle aurora gradient glow, huge bold headline, one-line subheadline, email input + CTA button, product screenshot in a browser mockup with soft shadow and glow, logo wall of trusted companies below, then a 3-column feature section with icons. Modern tech aesthetic like Linear/Vercel, lots of whitespace, one accent color.",
+      "prompt_zh": "AI 产品落地页：深色+极光渐变光效、大标题、邮箱输入+CTA、带光晕的产品截图、客户 logo 墙、三栏功能区，Vercel/Linear 感。",
+      "tools": [
+        "v0",
+        "Lovable",
+        "Framer"
+      ]
+    },
+    {
+      "id": "landing-editorial",
+      "title": "编辑杂志风品牌官网",
+      "category": "落地页官网",
+      "styles": [
+        "大字体",
+        "留白",
+        "黑白"
+      ],
+      "scenario": "设计工作室/独立品牌官网",
+      "prompt": "Create an editorial, magazine-style brand website: off-white paper background, oversized serif headline typography, black and white palette with one red accent, asymmetric grid layout, large photography, numbered sections, fine hairline rules, generous whitespace, refined and confident like a print magazine brought to the web. No gradients, no rounded cards.",
+      "prompt_zh": "杂志编辑风官网：米白纸感底、超大衬线标题、黑白+一点红、不对称网格、细线分割、大量留白，拒绝渐变和圆角卡片。",
+      "tools": [
+        "v0",
+        "Framer",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "landing-brutalist",
+      "title": "新丑风/粗野主义落地页",
+      "category": "落地页官网",
+      "styles": [
+        "新丑风",
+        "粗野主义",
+        "高对比"
+      ],
+      "scenario": "潮流品牌/独立产品/活动页",
+      "prompt": "Design a neo-brutalist landing page: raw white background, thick black borders (3px) on every element, hard offset shadows with no blur, bright clashing accent colors (yellow, hot pink, cyan), huge grotesque sans-serif headlines, marquee ticker strip, sticker-like badges rotated slightly, monospace details. Loud, playful, anti-corporate, but keep the grid aligned and readable.",
+      "prompt_zh": "新丑风落地页：粗黑边框、无模糊硬阴影、黄/粉/青撞色、超大标题、跑马灯条、贴纸徽章，闹但网格要齐。",
+      "tools": [
+        "v0",
+        "Lovable"
+      ]
+    },
+    {
+      "id": "ecom-fashion",
+      "title": "时尚电商小程序",
+      "category": "电商零售",
+      "styles": [
+        "时尚",
+        "图片主导",
+        "极简"
+      ],
+      "scenario": "服装/美妆电商首页与商品详情",
+      "prompt": "Design a fashion e-commerce mobile UI: clean white background, top search and category tabs, full-bleed model photography in a 2-column product grid, product name, price and discount tag in small refined type, product detail page with swipeable gallery, size selector chips, sticky add-to-cart bar. Black/white/gray palette, premium minimal aesthetic like COS/Zara apps.",
+      "prompt_zh": "时尚电商：模特大图双列网格、小字价格排版、详情页图集+尺码 chips+吸底加购条，黑白灰高级极简。",
+      "tools": [
+        "v0",
+        "即梦"
+      ]
+    },
+    {
+      "id": "ecom-dashboard-store",
+      "title": "商家经营后台",
+      "category": "电商零售",
+      "styles": [
+        "数据",
+        "浅色",
+        "卡片"
+      ],
+      "scenario": "电商商家数据/订单后台",
+      "prompt": "Build an e-commerce merchant dashboard: revenue overview cards (GMV, orders, conversion, refund rate) with day-over-day deltas, sales trend area chart, top products ranking table, pending orders and low-stock alerts panel, channel breakdown donut chart. Light theme, teal primary color, dense but scannable, designed for shop owners checking numbers every morning.",
+      "prompt_zh": "商家经营后台：GMV/订单/转化/退款四卡片带环比、销售趋势、热销排行、待处理订单与库存预警，青绿主色。",
+      "tools": [
+        "v0",
+        "Cursor",
+        "Qoder"
+      ]
+    },
+    {
+      "id": "datav-screen",
+      "title": "数据大屏指挥中心",
+      "category": "数据大屏",
+      "styles": [
+        "深蓝",
+        "发光",
+        "大屏"
+      ],
+      "scenario": "城市/业务数据可视化大屏 16:9",
+      "prompt": "Design a 16:9 data visualization command-center screen: deep blue-black background, central map with glowing points and connection arcs, side panels with KPI numbers in large glowing digits, line/bar/gauge charts with cyan and electric blue palette, thin tech-style corner brackets on panels, subtle grid background, futuristic control-room feel, all text legible from a distance.",
+      "prompt_zh": "数据大屏：深蓝黑底、中央发光地图、两侧 KPI 大数字与图表、青蓝发光配色、面板科技切角，远距离可读。",
+      "tools": [
+        "v0",
+        "即梦",
+        "Midjourney"
+      ]
+    },
+    {
+      "id": "datav-report",
+      "title": "数据报告/信息图页",
+      "category": "数据大屏",
+      "styles": [
+        "信息图",
+        "浅色",
+        "出版物"
+      ],
+      "scenario": "年度报告/数据新闻页面",
+      "prompt": "Create a data-report web page in an editorial infographic style: cream background, one key number as a huge headline per section, clean bar and slope charts drawn in a limited palette (ink black, vermillion, ochre), short explanatory paragraphs beside each chart, source notes in small type, scroll-driven section rhythm like a NYT data story.",
+      "prompt_zh": "数据报告页：奶油底、每节一个大数字标题、黑/朱红/赭石有限配色图表、旁注短文+小字来源，纽约时报数据新闻感。",
+      "tools": [
+        "v0",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "ai-chat-app",
+      "title": "AI 聊天助手界面",
+      "category": "AI产品",
+      "styles": [
+        "极简",
+        "对话",
+        "浅色"
+      ],
+      "scenario": "AI 聊天/智能助手产品界面",
+      "prompt": "Design an AI chat assistant interface: centered conversation column (max-width 760px), clean message bubbles with the assistant's answers in plain text blocks, suggestion chips above the input, a floating rounded input box with attach and send buttons, left sidebar with chat history, subtle typing indicator, light theme with one violet accent, calm and focused like ChatGPT/Claude, no clutter.",
+      "prompt_zh": "AI 聊天界面：居中对话列、建议 chips、悬浮圆角输入框、左侧历史列表、紫色点缀，ChatGPT/Claude 式 calm 极简。",
+      "tools": [
+        "v0",
+        "Lovable",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "ai-image-tool",
+      "title": "AI 绘图工具界面",
+      "category": "AI产品",
+      "styles": [
+        "深色",
+        "画布",
+        "工具栏"
+      ],
+      "scenario": "AI 图片生成/编辑工具",
+      "prompt": "Create an AI image generation tool UI: dark editor theme, large central canvas with the generated image, left toolbar (generate, inpaint, upscale, variations), right panel with prompt textarea, model selector, aspect-ratio and style preset chips, bottom filmstrip of generation history, purple-blue accent glow on the primary Generate button, professional creative-tool feel like Midjourney/Leonardo.",
+      "prompt_zh": "AI 绘图工具：深色编辑器、中央大画布、左工具栏、右提示词+模型+比例+风格面板、底部历史胶片条，生成按钮紫蓝光效。",
+      "tools": [
+        "v0",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "banking-web",
+      "title": "网上银行/金融门户",
+      "category": "金融",
+      "styles": [
+        "稳重",
+        "浅色",
+        "信任感"
+      ],
+      "scenario": "银行/证券 Web 门户首页",
+      "prompt": "Design a trustworthy online banking web homepage: white and deep-green palette, top navigation with login panel, account overview cards, transfer and payment quick entries, exchange-rate and product tables, security notice area, clear large clickable targets, conservative typography, no trendy gradients — stability and clarity above all.",
+      "prompt_zh": "金融门户：白+深绿、登录区、账户总览卡、转账快捷入口、汇率/产品表格、安全提示，稳重清晰第一。",
+      "tools": [
+        "v0",
+        "Qoder"
+      ]
+    },
+    {
+      "id": "social-feed",
+      "title": "社交内容流 App",
+      "category": "内容社交",
+      "styles": [
+        "瀑布流",
+        "图片主导",
+        "年轻"
+      ],
+      "scenario": "图片社交/种草类 App",
+      "prompt": "Design a social discovery app home feed: two-column masonry waterfall of image cards with short titles, author avatar and like count, top category tabs, floating publish button, warm white background, coral accent color, youthful and browsable, cards with varied heights, minimal chrome so content shines.",
+      "prompt_zh": "种草社交 App：双列瀑布流图片卡、分类 tabs、悬浮发布按钮、珊瑚色点缀，内容为主、界面退后。",
+      "tools": [
+        "v0",
+        "即梦"
+      ]
+    },
+    {
+      "id": "music-player",
+      "title": "音乐播放器界面",
+      "category": "内容社交",
+      "styles": [
+        "沉浸",
+        "深色",
+        "专辑图主导"
+      ],
+      "scenario": "音乐 App 播放页与首页",
+      "prompt": "Create a music app UI: immersive player screen with large album artwork, blurred album-color background gradient, song title and artist, progress bar with lyrics line highlighted, shuffle/previous/play/next/repeat controls; home screen with personalized playlist cards and recently played row. Dark theme, artwork colors drive the palette, elegant and emotional.",
+      "prompt_zh": "音乐 App：播放页大专辑图+同色模糊渐变背景、歌词高亮、进度条；首页个性化歌单卡，深色沉浸、颜色跟着封面走。",
+      "tools": [
+        "v0",
+        "Midjourney",
+        "即梦"
+      ]
+    },
+    {
+      "id": "detail-spacing-rhythm",
+      "title": "间距节奏：8pt 网格呼吸感",
+      "category": "细节优化",
+      "styles": [
+        "间距",
+        "极简",
+        "秩序感"
+      ],
+      "scenario": "任何界面显乱/挤时的间距优化改版",
+      "prompt": "Refine this UI's spacing to feel calm and premium: use a strict 8pt spacing system (8/16/24/32/48), group related elements tightly and separate groups generously, align everything to a clear grid, increase whitespace around headings and primary actions, keep card padding consistent at 24px, and remove any random one-off margins. Same content and colors, only spacing and alignment change.",
+      "prompt_zh": "只改间距：严格 8pt 系统、组内紧组间松、卡片内边距统一 24px、标题和主按钮周围留白加大，内容配色不动，界面立刻显贵。",
+      "tools": [
+        "v0",
+        "Lovable",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "detail-type-hierarchy",
+      "title": "字体层级：三级标题拉开层次",
+      "category": "细节优化",
+      "styles": [
+        "字体",
+        "层级",
+        "可读性"
+      ],
+      "scenario": "界面看着平/没重点时的字体优化",
+      "prompt": "Improve this UI's typography hierarchy: only three heading levels plus body and caption text; page title 28px semibold, section title 18px medium, body 14px regular with 1.6 line height, captions 12px in gray; use weight and size — not color — to create hierarchy; limit the design to one font family and at most 4 font sizes per screen; make numbers in data areas tabular and slightly larger.",
+      "prompt_zh": "字体只留三级标题+正文+小字：靠字重和大小分层不用颜色，一屏最多 4 种字号，正文行高 1.6，数据数字放大用等宽数字。",
+      "tools": [
+        "v0",
+        "Cursor",
+        "Qoder"
+      ]
+    },
+    {
+      "id": "detail-color-restraint",
+      "title": "配色克制：一主色 + 中性灰",
+      "category": "细节优化",
+      "styles": [
+        "配色",
+        "克制",
+        "高级感"
+      ],
+      "scenario": "界面花花绿绿/像模板时的配色收敛",
+      "prompt": "Recolor this UI to look more designed: keep exactly one primary brand color, one accent for warnings/errors only, and build everything else from a neutral gray scale (text #1A1A1A, secondary #666, borders #E5E5E5, background #FAFAFA); remove all decorative gradients and rainbow icon colors; colored elements must mean something (status, action, selection), never decoration.",
+      "prompt_zh": "配色收敛到一个主色+一个警示色，其余全用中性灰阶；删掉装饰性渐变和彩虹图标，颜色只表达状态/操作/选中。",
+      "tools": [
+        "v0",
+        "Lovable",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "detail-shadow-border",
+      "title": "阴影与边框：细边框代替重阴影",
+      "category": "细节优化",
+      "styles": [
+        "阴影",
+        "边框",
+        "轻量"
+      ],
+      "scenario": "卡片显脏/显廉价时的质感优化",
+      "prompt": "Fix the cheap look of these cards: replace heavy drop shadows with a 1px border (#0000000F) plus one very soft shadow (0 1px 2px rgba(0,0,0,0.04)); unify corner radius to 12px everywhere; remove inner shadows and glow effects; interactive cards may lift slightly on hover with a deeper shadow, static cards stay flat. The result should feel like Linear/Notion — quiet and precise.",
+      "prompt_zh": "卡片去廉价感：重阴影换成 1px 细边框+一层极淡阴影，圆角统一 12px，删内阴影和发光，Linear/Notion 式安静精准。",
+      "tools": [
+        "v0",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "detail-alignment-grid",
+      "title": "对齐强迫症：左边缘一条线",
+      "category": "细节优化",
+      "styles": [
+        "对齐",
+        "网格",
+        "秩序感"
+      ],
+      "scenario": "元素参差不齐/看着歪时的对齐修正",
+      "prompt": "Audit and fix alignment in this UI: every text block, icon and button in a column must share the same left edge; icon sizes unified to 20px inside 40px touch targets; list rows share identical height and padding; form labels and inputs align to one baseline grid; no element may sit at a unique random offset — if it cannot align, remove it. Pixel-perfect order is the goal.",
+      "prompt_zh": "对齐修正：同列元素共用左边缘、图标统一 20px/点击区 40px、列表行高内边距一致、表单基线对齐，对不齐的元素宁可删掉。",
+      "tools": [
+        "v0",
+        "Cursor",
+        "Qoder"
+      ]
+    },
+    {
+      "id": "detail-states-complete",
+      "title": "状态补全：空/加载/错误态",
+      "category": "细节优化",
+      "styles": [
+        "状态",
+        "完整度",
+        "产品感"
+      ],
+      "scenario": "界面像半成品时的状态补全设计",
+      "prompt": "Design the missing states for this product UI so it feels finished: (1) empty state with a small illustration, one-line explanation and a primary action button; (2) skeleton loading screens matching the real layout, no spinners on white; (3) inline error states with what happened + how to retry, in plain language; (4) success confirmation that is quiet, not a confetti modal. Keep all states in the same visual language as the main UI.",
+      "prompt_zh": "补齐四种状态：空状态（小插图+一句话+主按钮）、骨架屏加载、说人话的行内错误+重试、安静的成功反馈，风格与主界面一致。",
+      "tools": [
+        "v0",
+        "Lovable",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "detail-micro-interaction",
+      "title": "微交互：hover/点击反馈",
+      "category": "细节优化",
+      "styles": [
+        "动效",
+        "反馈",
+        "精致"
+      ],
+      "scenario": "界面死板/点了没反应感时的动效补充",
+      "prompt": "Add tasteful micro-interactions to this UI: buttons darken 8% on hover and scale to 0.98 on press; cards lift 2px with a softer shadow on hover; page and modal transitions 200ms ease-out, nothing longer; toggles and checkboxes animate their state change; loading buttons show an inline spinner and disable repeat clicks. No bouncy, playful or attention-seeking animation — everything subtle and fast.",
+      "prompt_zh": "克制的微交互：hover 变深、按下缩放 0.98、转场统一 200ms、开关/勾选有状态动画、加载按钮防重复点，不要弹跳卖萌动效。",
+      "tools": [
+        "v0",
+        "Lovable"
+      ]
+    },
+    {
+      "id": "detail-icon-consistency",
+      "title": "图标一致性：一套线性图标",
+      "category": "细节优化",
+      "styles": [
+        "图标",
+        "一致性",
+        "线性"
+      ],
+      "scenario": "图标风格混杂像拼凑时的统一",
+      "prompt": "Unify all icons in this UI: one single icon set (Lucide/Feather style), outline only, 1.5px stroke, rounded line caps, 20px default size, no filled/duotone/emoji icons mixed in; icons inherit the text color of their label; every icon must pair with a text label or tooltip — no naked mystery icons. Replace any inconsistent icon instead of styling around it.",
+      "prompt_zh": "图标只用一套线性图标：描边 1.5px、圆头、20px、颜色跟文字走，禁止填充/双色/emoji 混用，每个图标配文字或提示。",
+      "tools": [
+        "v0",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "detail-contrast-a11y",
+      "title": "对比度与可读性检查",
+      "category": "细节优化",
+      "styles": [
+        "对比度",
+        "无障碍",
+        "可读性"
+      ],
+      "scenario": "字看不清/灰字太浅时的可读性修复",
+      "prompt": "Fix readability in this UI to WCAG AA: body text contrast at least 4.5:1 against its background (no light-gray text on white for real content), large headings at least 3:1; minimum body size 14px on desktop and 16px on mobile inputs; placeholder text is not a label — keep visible labels; focus states get a clear 2px outline; tap targets at least 44px on mobile. Beauty must survive at arm's length and in sunlight.",
+      "prompt_zh": "可读性到达标线：正文对比度 ≥4.5:1、真实内容不用浅灰字、移动端输入框 16px、保留可见标签、焦点 2px 描边、点击区 ≥44px。",
+      "tools": [
+        "v0",
+        "Cursor",
+        "Qoder"
+      ]
+    },
+    {
+      "id": "detail-visual-weight",
+      "title": "视觉重量：一个页面一个主角",
+      "category": "细节优化",
+      "styles": [
+        "焦点",
+        "层级",
+        "留白"
+      ],
+      "scenario": "什么都想突出等于没重点时的焦点收敛",
+      "prompt": "Rebalance the visual weight of this page so it has exactly one hero: the primary action is the only filled, colored button — all other actions become text or outline buttons; the key metric or headline is at least 2x larger than anything else; remove competing badges, banners and popups (keep at most one); dim secondary panels with a lighter background instead of borders and shadows. The eye should land in one second.",
+      "prompt_zh": "一页一个主角：主按钮是唯一实心彩色按钮、核心数字/标题至少大 2 倍、横幅徽章最多留一个、次要面板用浅底弱化，一秒抓住眼球。",
+      "tools": [
+        "v0",
+        "Lovable"
+      ]
+    },
+    {
+      "id": "detail-feizhang-five",
+      "title": "费纸张5细节合集（原作版）",
+      "category": "细节优化",
+      "styles": [
+        "细节",
+        "原作摘录",
+        "合集"
+      ],
+      "scenario": "生成任何界面时一次性交代5个易忽视细节",
+      "prompt": "Pay attention to these 5 small details that make AI-generated UI feel comfortable: (1) tabular numbers — use font-variant-numeric: tabular-nums so digits never jitter; (2) concentric corner radius — outer radius = inner radius + padding (e.g. border-radius: calc(20px + 16px)), never the same radius inside and out; (3) staggered entrance — split the entrance into icon, title, body and button, appearing one after another with ~100ms stagger; (4) balanced headline wrapping — text-wrap: balance on headings so no orphan word sits alone on the last line; (5) shadows instead of borders — replace 1px solid borders with soft multi-layer box-shadows for natural edges.",
+      "prompt_zh": "源自抖音 @费纸张《5个小细节让AI设计的界面看着更舒服》（AI设计技巧分享第3集，2026-10-21，作品 7699104647889423667，2026-11-17 已核对画面/字幕/文案）。五件套一次交代：等宽数字、同心圆角、错开入场、标题平衡换行、阴影代替边框。",
+      "tools": [
+        "v0",
+        "Lovable",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "detail-tabular-nums",
+      "title": "等宽数字：数字不跳动",
+      "category": "细节优化",
+      "styles": [
+        "数字",
+        "字体",
+        "细节"
+      ],
+      "scenario": "价格/计时器/数据表格等数字会变化的界面",
+      "prompt": "Use tabular numbers everywhere numbers can change (prices, timers, counters, tables): font-variant-numeric: tabular-nums; so every digit has the same width and values never shift or jitter when they update. Apply it to KPI figures, prices, countdowns and any numeric column by default.",
+      "prompt_zh": "会变的数字一律等宽：font-variant-numeric: tabular-nums，每个数字一样宽，更新时不左右跳。源自费纸张视频细节1。",
+      "tools": [
+        "v0",
+        "Cursor",
+        "Qoder"
+      ]
+    },
+    {
+      "id": "detail-concentric-radius",
+      "title": "同心圆角：外层=内层+内边距",
+      "category": "细节优化",
+      "styles": [
+        "圆角",
+        "细节",
+        "卡片"
+      ],
+      "scenario": "卡片套图片/按钮套容器等嵌套圆角场景",
+      "prompt": "Use concentric corner radii for nested elements: the outer container's border-radius must equal the inner element's radius plus the padding between them (e.g. inner 20px radius with 16px padding → outer radius 36px, border-radius: calc(20px + 16px)). Never give inner and outer elements the same radius — that makes corners look pinched and wrong.",
+      "prompt_zh": "嵌套圆角要同心：外层半径 = 内层半径 + 内边距（如 20+16=36），内外一样大是错误做法，角会显挤。源自费纸张视频细节2。",
+      "tools": [
+        "v0",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "detail-staggered-entrance",
+      "title": "错开入场：元素依次登场",
+      "category": "细节优化",
+      "styles": [
+        "动效",
+        "入场",
+        "细节"
+      ],
+      "scenario": "页面/卡片首次出现的入场动画",
+      "prompt": "Stagger the entrance animation: split the block into icon, title, body text and button, and let them fade/slide in one after another with about 100ms stagger between elements instead of everything appearing at once. Keep each animation short (200-300ms, ease-out) so it feels ordered and calm, never bouncy.",
+      "prompt_zh": "入场要错开：图标、标题、正文、按钮拆开依次入场，间隔约 100ms，不要整块一起蹦出来。源自费纸张视频细节3（片尾汇总为100ms间隔）。",
+      "tools": [
+        "v0",
+        "Lovable"
+      ]
+    },
+    {
+      "id": "detail-balanced-headline",
+      "title": "平衡标题换行：不留孤词",
+      "category": "细节优化",
+      "styles": [
+        "排版",
+        "标题",
+        "细节"
+      ],
+      "scenario": "大标题/卡片标题的换行排版",
+      "prompt": "Balance headline wrapping: apply text-wrap: balance to headings (h1/h2 and card titles) so multi-line titles break into lines of similar length and no single orphan word is left alone on the last line. Check every long title at mobile width as well.",
+      "prompt_zh": "标题换行要平衡：h1 { text-wrap: balance; }，各行长度接近，最后一行不落单一个词。源自费纸张视频细节4。",
+      "tools": [
+        "v0",
+        "Cursor"
+      ]
+    }
+  ]
+}
