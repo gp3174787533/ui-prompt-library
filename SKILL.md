@@ -28,6 +28,7 @@ AI 生成 UI 的提示词库：
 4. **入库**：新条目必须有唯一 id（英文短横线）、分类、≥1 个风格标签、场景、英文提示词、中文说明、适用工具；同步更新 `prompts.json` 和 `prompts/<分类>.md`，新分类新建 md。
 5. **生成验证**：入库后必须实际生成一次 — 用该条提示词（细节类提示词加一个基础界面场景）生成 UI 效果图，逐张目检是否体现关键特征。通过才标 `verified: {date, method, result: "pass", note}`；不通过就改提示词或在 note 里如实写差距，不许假标。效果图存 `previews/<id>.png`，再做一张展示 GIF 存 `previews/<id>.gif`（≤560px 宽、缓慢推近的循环动图），路径写进条目的 `preview_img` / `preview_gif`，分类 md 里嵌 GIF 展示。
 6. **提交**：`git add -A && git commit`，信息写清动作和条目，如 `add: <id> 标题`、`verify: <id> 验证通过`、`fav: <id>`。
+7. **更新 README**：每次改库后同步更新 `README.md` 的「当前状态」日期、全库条数/分类数/已验证数和分类一览表，让 README 永远反映最新状态，不要攒着不更。
 
 ## 收藏维护
 
