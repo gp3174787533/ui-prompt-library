@@ -29,7 +29,12 @@
         "v0",
         "Lovable",
         "Cursor"
-      ]
+      ],
+      "group": {
+        "id": "saas-styles",
+        "name": "SaaS 后台 · 风格组"
+      },
+      "variant_label": "深色极简仪表盘"
     },
     {
       "id": "saas-admin-light",
@@ -47,7 +52,12 @@
         "v0",
         "Cursor",
         "Qoder"
-      ]
+      ],
+      "group": {
+        "id": "saas-styles",
+        "name": "SaaS 后台 · 风格组"
+      },
+      "variant_label": "浅色企业级管理"
     },
     {
       "id": "saas-kanban",
@@ -64,7 +74,12 @@
       "tools": [
         "v0",
         "Lovable"
-      ]
+      ],
+      "group": {
+        "id": "saas-styles",
+        "name": "SaaS 后台 · 风格组"
+      },
+      "variant_label": "卡片看板协作"
     },
     {
       "id": "mobile-fintech",
@@ -82,7 +97,12 @@
         "v0",
         "Midjourney",
         "即梦"
-      ]
+      ],
+      "group": {
+        "id": "mobile-styles",
+        "name": "移动端 App · 风格组"
+      },
+      "variant_label": "深色高级感金融"
     },
     {
       "id": "mobile-health",
@@ -100,7 +120,12 @@
         "v0",
         "Lovable",
         "即梦"
-      ]
+      ],
+      "group": {
+        "id": "mobile-styles",
+        "name": "移动端 App · 风格组"
+      },
+      "variant_label": "清新浅色健康"
     },
     {
       "id": "mobile-food",
@@ -118,7 +143,12 @@
         "v0",
         "即梦",
         "Midjourney"
-      ]
+      ],
+      "group": {
+        "id": "mobile-styles",
+        "name": "移动端 App · 风格组"
+      },
+      "variant_label": "暖色食欲感外卖"
     },
     {
       "id": "landing-ai-product",
@@ -136,7 +166,12 @@
         "v0",
         "Lovable",
         "Framer"
-      ]
+      ],
+      "group": {
+        "id": "landing-styles",
+        "name": "落地页官网 · 风格组"
+      },
+      "variant_label": "深色科技渐变"
     },
     {
       "id": "landing-editorial",
@@ -154,7 +189,12 @@
         "v0",
         "Framer",
         "Cursor"
-      ]
+      ],
+      "group": {
+        "id": "landing-styles",
+        "name": "落地页官网 · 风格组"
+      },
+      "variant_label": "杂志极简黑白"
     },
     {
       "id": "landing-brutalist",
@@ -171,7 +211,12 @@
       "tools": [
         "v0",
         "Lovable"
-      ]
+      ],
+      "group": {
+        "id": "landing-styles",
+        "name": "落地页官网 · 风格组"
+      },
+      "variant_label": "新丑风粗野主义"
     },
     {
       "id": "ecom-fashion",
@@ -224,7 +269,12 @@
         "v0",
         "即梦",
         "Midjourney"
-      ]
+      ],
+      "group": {
+        "id": "datav-styles",
+        "name": "数据可视化 · 风格组"
+      },
+      "variant_label": "深蓝发光大屏"
     },
     {
       "id": "datav-report",
@@ -241,7 +291,12 @@
       "tools": [
         "v0",
         "Cursor"
-      ]
+      ],
+      "group": {
+        "id": "datav-styles",
+        "name": "数据可视化 · 风格组"
+      },
+      "variant_label": "浅色信息图报告"
     },
     {
       "id": "ai-chat-app",
