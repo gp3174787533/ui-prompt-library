@@ -670,3 +670,532 @@
   "source": "费纸张抖音（已登录核对原文，2026-11-17）"
 }
 ```
+
+## 2026-11-17 夜 · SpicyTater 主页系统收集（用户指示关注并收集）
+
+作者：SpicyTater（抖音号 xinxinyaokuaileo，湖南，独立开发者），作品 62 条，设计相关 38 条；已关注（粉丝 6056→6057）。其第22集《后台菜单交互》即 2026-11-17 用户最早分享的那条链接（7695264996816620863）。
+
+**重要局限**：本次浏览器里视频无法播放（播放器一直 00:00 加载），要点来自页面文案 + 抖音「章节要点」AI 摘要，**不是视频逐字原文**；条目已在 source 里如实标注「章节摘录」。8 条无章节要点且文案为模板/错贴，未能提取：Vibe 第33集（查数据）、第27集粒子交互、第23集高级布局、第19集编辑工具、第18集任务反馈、第17集标题动效、第8集图表动画、第4集展开面板——只在来源档案中记录，暂不立条目，待能播放时补。另有 12 条已摘录但本批未立条目（图片材质、电影感、触感、5种导航、命令面板、脱模板方法论、官网滚动、加载7种、弹窗7种、术语库、设置页以外的 Vibe 集数等），要点已在本节档案中保留，可后续提升为条目。作者称其 Skills 已开源在 GitHub 仓库 `spt-ui-interaction-skills`（文案说法，本次未核到确切网址），若后续取得仓库原文，可据原文升级这些条目。
+
+
+### 本批新增待验证条目（20 条）
+
+#### SpicyTater：后台菜单交互 8 类选型 (`spt-admin-menu`)
+
+```json
+{
+  "id": "spt-admin-menu",
+  "title": "SpicyTater：后台菜单交互 8 类选型",
+  "category": "SaaS后台",
+  "styles": [
+    "后台菜单",
+    "交互选型",
+    "章节摘录"
+  ],
+  "scenario": "做后台/侧栏导航菜单，不知道用哪种展开方式时",
+  "prompt": "Choose admin menu patterns by structure: sliding highlight block for sidebar nav and top tabs; expand-in-place submenus for hierarchical project/file trees; top drop-down panel when there are few sections but multiple entries (mouse and keyboard); floating bottom dock for frequent entries (magnify on hover, neighbours make room); command palette when entries are many (search + keyboard selection); status dots and count badges for new messages and pending items, animating the number when it changes. Pick the combination by section count, hierarchy depth and usage frequency; entries must stay obvious and reachable.",
+  "prompt_zh": "SpicyTater 第22集（2062赞）：滑动高亮块/就地展开/顶部下落面板/底部悬浮停靠栏/命令面板/状态点徽标等 8 类后台菜单，按栏目数量、层级、频率选组合。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7695264996816620863"
+}
+```
+
+#### SpicyTater：App 交互动画 10 种 (`spt-app-animation-10`)
+
+```json
+{
+  "id": "spt-app-animation-10",
+  "title": "SpicyTater：App 交互动画 10 种",
+  "category": "细节优化",
+  "styles": [
+    "动效",
+    "App交互",
+    "章节摘录"
+  ],
+  "scenario": "给 App/小程序加有质感的交互动画时（动效类）",
+  "prompt": "Implement these app interaction animations: theme switch expands in a circle from the tap point; drag-to-reorder where other rows yield space and the dragged row lifts out; batch check where checkmarks pop in sequence with a slight elastic scale; slider snap — after release the thumb glides with inertia then snaps to the nearest tick; text expand where container height animates with content and the arrow rotates 180°; stepper progress that overshoots slightly then settles with a soft rebound; linked switches giving visual feedback across the group without changing state; card delete where the card flies along a curve to the delete icon, shrinking, rotating and fading; card stacking where the top card pauses then is compressed by the next; tag selection where the chosen tag scales up and neighbours shift aside.",
+  "prompt_zh": "SpicyTater 第9集（1926赞/2230收藏）：主题圆形扩散、拖拽排序、批量勾选弹性、滑杆吸附、文本展开、步骤条回弹、开关联动、卡片删除飞出、卡片堆叠、标签选择等 10 种交互动画。动效类，验证需 GIF。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7682010237578136858"
+}
+```
+
+#### SpicyTater：下拉组件 8 种选型 (`spt-dropdown-8`)
+
+```json
+{
+  "id": "spt-dropdown-8",
+  "title": "SpicyTater：下拉组件 8 种选型",
+  "category": "细节优化",
+  "styles": [
+    "下拉",
+    "组件选型",
+    "章节摘录"
+  ],
+  "scenario": "做下拉选择，不知道用哪种下拉形态时",
+  "prompt": "Pick the dropdown form by the job: plain Dropdown for choosing one from a few fixed options; grouped dropdown (bus/group headers) when options are many; Typeahead searchable dropdown filtering as you type; Split action button — main area runs the primary action, the drop zone offers related actions; Date range picker via calendar for start/end; Cascade select for parent-child options, choosing a level expands the next; Tag Picker for multi-select, keeping chosen tags visible; Mega Menu for content-rich sites with many sections in multiple columns. State the option count, grouping, search and action model when asking an AI to build one.",
+  "prompt_zh": "SpicyTater 第7集（1057赞/1239收藏）：Dropdown/分组下拉/Typeahead/拆分按钮/日期范围/级连/Tag Picker/Mega Menu 8 种下拉，按数量、分组、搜索、操作选型。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7680742171204439296"
+}
+```
+
+#### SpicyTater：浮层 6 种选型与 3 个坑 (`spt-overlay-six`)
+
+```json
+{
+  "id": "spt-overlay-six",
+  "title": "SpicyTater：浮层 6 种选型与 3 个坑",
+  "category": "细节优化",
+  "styles": [
+    "浮层",
+    "弹窗选型",
+    "章节摘录"
+  ],
+  "scenario": "纠结用弹窗、抽屉还是新页面时",
+  "prompt": "Choose overlay components by weight: Tooltip — quietest, small text on hover, gone on leave; Toast — fleeting, for operation results; Alert — persistent, for important notices; Modal — for important decisions; plus Popconfirm for inline confirmation and Drawer for side content. Avoid three traps: don't close modals on backdrop click when there's unsaved input (add draft autosave instead); don't demand confirmation for deletable-and-undoable actions; write the action's result directly on the button. Long forms don't belong squeezed inside a small modal — use a drawer or a full page.",
+  "prompt_zh": "SpicyTater 第28集（848赞/843收藏）：Tooltip/Toast/Alert/Modal/Popconfirm/Drawer 选型 + 三坑（蒙层误关配草稿保存、可撤销别弹窗确认、按钮直写结果）。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7699199951179418907"
+}
+```
+
+#### SpicyTater：交互质感 8 指令 (`spt-app-texture-8`)
+
+```json
+{
+  "id": "spt-app-texture-8",
+  "title": "SpicyTater：交互质感 8 指令",
+  "category": "细节优化",
+  "styles": [
+    "动效",
+    "质感",
+    "章节摘录"
+  ],
+  "scenario": "想要 App 交互有物理质感、遵循统一运动规则时（动效类）",
+  "prompt": "Give interface motion one consistent physics: magnetic snap — resistance while approaching a target, acceleration inside the snap range, elastic settle at the end; liquid deformation — dragged cards stretch at edges and recover with a rebound on release; 3D parallax — foreground moves most, midground less, background slightly; center focus — items near screen center scale up, leaving items shrink or fade in weight; liquid tab — the selected background stretches horizontally, contracts past the midpoint, then a slight rebound; image expansion — from thumbnail to fullscreen with continuous direction and position; gesture-driven transitions whose progress follows the finger and completes past a threshold; collision push — elements have different motion weights, pushing and rebounding on contact.",
+  "prompt_zh": "SpicyTater 第10集（511赞）：磁吸/液态形变/3D视差/中心聚焦/液态tab/图片展开/手势转场/碰撞推挤 8 种质感指令，核心是全场遵循同一套运动规则。动效类，验证需 GIF。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7682010730085862696"
+}
+```
+
+#### SpicyTater：App 高级交互 7 指令 (`spt-app-gestures-7`)
+
+```json
+{
+  "id": "spt-app-gestures-7",
+  "title": "SpicyTater：App 高级交互 7 指令",
+  "category": "细节优化",
+  "styles": [
+    "手势",
+    "App交互",
+    "章节摘录"
+  ],
+  "scenario": "做移动端手势交互、总觉得不跟手时",
+  "prompt": "Implement these mobile gesture rules: edge-swipe back — drag from the screen edge pulls the previous page with the finger, release decides by distance, velocity and direction; press-and-slide-off cancel — pressing sinks the button, sliding out weakens the press state, releasing outside cancels the tap; partial text transition — when filters change, only the changed text transitions, unchanged text stays put; gesture direction lock — decide the direction at gesture start and never flip mid-gesture; interruptible animation takeover — a gesture can seize a running animation and continue from the element's current position; landing preview — while dragging a card horizontally, preview its predicted landing spot and land exactly there; boundary damping — pulling past the top keeps moving with increasing resistance, then springs back on release.",
+  "prompt_zh": "SpicyTater 第11集（1225赞）：跟手返回/滑出取消/文字局部过渡/方向锁定/动画中途接管/落点预览/边界阻尼 7 条高级交互指令。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7682681851068026152"
+}
+```
+
+#### SpicyTater：展开动画 6 种 (`spt-expand-animations`)
+
+```json
+{
+  "id": "spt-expand-animations",
+  "title": "SpicyTater：展开动画 6 种",
+  "category": "细节优化",
+  "styles": [
+    "动效",
+    "展开",
+    "章节摘录"
+  ],
+  "scenario": "小组件需要展开成大内容时（动效类）",
+  "prompt": "Use these expansion patterns: dot-to-capsule — a circle expands into a capsule carrying a status or short message; capsule-to-card — a compact capsule expands into a full info card with more content and actions; compact-to-panel — the same feature appears compact first and expands into a full control panel when needed; radius morph — changing corner radius morphs one form smoothly into another; size morph — animate width and height so a small widget becomes a larger module; content reflow — after expanding, inner content rearranges, and collapsing retraces the same path back to the small entry. Always specify start state, end state, which properties change, and how it collapses back.",
+  "prompt_zh": "SpicyTater 第6集（308赞）：圆点变胶囊/胶囊变信息卡/紧凑态展开/圆角形态过渡/尺寸变形/内容重排，描述时讲清起止状态、变化属性、收回方式。动效类，验证需 GIF。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7680037853694381327"
+}
+```
+
+#### SpicyTater：像产品不像作业的六步 (`spt-product-not-homework`)
+
+```json
+{
+  "id": "spt-product-not-homework",
+  "title": "SpicyTater：像产品不像作业的六步",
+  "category": "细节优化",
+  "styles": [
+    "方法论",
+    "产品级",
+    "章节摘录"
+  ],
+  "scenario": "AI 做的页面总像模板作业、想做到产品级时",
+  "prompt": "Take an AI-built page from homework to product in six steps: 1) design system first — unify fonts, colors, radii, spacing and component styles; 2) page structure — clarify navigation, content hierarchy and layouts across screen sizes; 3) interaction flows — define what happens on every click plus empty, loading, success and failure states; 4) concept image to confirm direction and visual focus; 5) real functionality — buttons, forms and data flows actually work; 6) detail pass — assets, responsive layout and interaction feedback.",
+  "prompt_zh": "SpicyTater 第14集（271赞，12分钟）：先定规范→搭结构→补交互流程（含空/加载/成功/失败态）→概念图定方向→落地真实功能→打磨细节。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7687151464640220456"
+}
+```
+
+#### SpicyTater：导航组件 7 种选型 (`spt-nav-7`)
+
+```json
+{
+  "id": "spt-nav-7",
+  "title": "SpicyTater：导航组件 7 种选型",
+  "category": "细节优化",
+  "styles": [
+    "导航",
+    "组件选型",
+    "章节摘录"
+  ],
+  "scenario": "给页面选导航组件时",
+  "prompt": "Choose navigation components precisely: Tabs for switching parallel content within one page; Segmented Control for fast switching between 2-3 views (fewer options, tighter layout); Breadcrumb for deep hierarchies, showing current position and quick return; Pagination for browsing large content by page; Stepper for process progress, showing done and remaining steps; Sidebar for feature-rich backends/desktops, fixed main entries with the current page highlighted; Bottom Navigation for mobile, 3-5 frequent entries fixed at the bottom. When asking an AI, name the component, its placement, what it switches and what gets highlighted.",
+  "prompt_zh": "SpicyTater 第3集（227赞）：Tabs/Segment Control/Breadcrumb/Pagination/Stepper/Sidebar/Bottom Navigation 7 种导航的适用与描述要点。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7678886080376098086"
+}
+```
+
+#### SpicyTater：拖拽动效 6 种 (`spt-drag-6`)
+
+```json
+{
+  "id": "spt-drag-6",
+  "title": "SpicyTater：拖拽动效 6 种",
+  "category": "细节优化",
+  "styles": [
+    "拖拽",
+    "动效",
+    "章节摘录"
+  ],
+  "scenario": "界面需要拖拽类交互时",
+  "prompt": "Implement the right drag pattern for the job: drag-and-drop — drag an object to a target zone, release to place or move; drag-to-sort — drag a list item while others auto-shift, save the new order on release; slider drag — drag a thumb to adjust a value, progress or option; drag-to-resize — drag an edge or corner to change width/height; drag-to-select — drag on empty space to draw a selection box over multiple objects; drag-to-upload — drag files into a marked zone with clear feedback. Each needs its drag direction, draggable area, target and release feedback spelled out.",
+  "prompt_zh": "SpicyTater 第5集（192赞）：拖放/拖拽排序/滑块拖动/拖拽调整大小/拖拽框选/拖拽上传 6 种，描述须含方向、区域、目标与松手反馈。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7679648378807979305"
+}
+```
+
+#### SpicyTater：空间卡片编排 6 种 (`spt-card-arrangements`)
+
+```json
+{
+  "id": "spt-card-arrangements",
+  "title": "SpicyTater：空间卡片编排 6 种",
+  "category": "细节优化",
+  "styles": [
+    "卡片编排",
+    "展示",
+    "章节摘录"
+  ],
+  "scenario": "作品集/相册想要非常规的卡片展示方式时",
+  "prompt": "Arrange showcase cards spatially: fan spread — cards fan around a pivot like playing cards, clicking one lifts it (covers, collections); depth stack — cards offset along depth for browsing one by one; cylinder ring — cards wrap a cylinder, drag to rotate (portfolios, albums, projects); sphere layout — cards distributed on a sphere for exploring photos/inspiration; spiral layout — cards along a spiral path (project stages, timelines); wave matrix — a tidy grid where neighbours offset in rhythm (photo walls, overviews). When asking an AI, specify the arrangement, the browsing method, how selection is shown and where cards return on close.",
+  "prompt_zh": "SpicyTater 第15集（171赞）：扇形展开/纵深叠排/圆柱环绕/球面排布/螺旋排布/波浪矩阵 6 种空间卡片编排及适用场景。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7687510825015315712"
+}
+```
+
+#### SpicyTater：点击区域与反馈五查 (`spt-tap-feedback`)
+
+```json
+{
+  "id": "spt-tap-feedback",
+  "title": "SpicyTater：点击区域与反馈五查",
+  "category": "细节优化",
+  "styles": [
+    "点击热区",
+    "反馈",
+    "章节摘录"
+  ],
+  "scenario": "界面精致但点不动、点不准时",
+  "prompt": "Audit tap usability: hit area — icons may be small but buttons must not shrink with them; size touch targets in CSS pixels adjusted per platform; hot-zone conflicts — fix overlaps by adjusting spacing and layout; distinguish tap from drag so gestures never misfire; feedback must be explicit — pressed state change, submitting state, and failure notice. When briefing an AI, always check: hit areas, hot-zone conflicts, links, tap-vs-drag distinction, and feedback states.",
+  "prompt_zh": "SpicyTater 第32集：点击范围（图标小按钮不能小）/热区冲突/区分点击与拖动/点击反馈明确（按下变化、提交状态、失败提示）五查。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7705257186435403058"
+}
+```
+
+#### SpicyTater：卡片/列表/表格按任务选型 (`spt-layout-by-task`)
+
+```json
+{
+  "id": "spt-layout-by-task",
+  "title": "SpicyTater：卡片/列表/表格按任务选型",
+  "category": "细节优化",
+  "styles": [
+    "布局选型",
+    "数据展示",
+    "章节摘录"
+  ],
+  "scenario": "挑图片、找文件、比数据不知道用卡片还是列表时",
+  "prompt": "Match data layout to the task: cards for browsing visual items (photos, furniture) — big image first, name in one line; lists for finding a known file — small thumbnail aside, full name expanded; tables for comparing data — show name, dimensions, format with the same data aligned in columns. When switching layouts, preserve the search conditions and selection state so the user never has to redo their work.",
+  "prompt_zh": "SpicyTater 第29集：卡片适合展示、列表适合查找、表格适合比数据；切换布局保留搜索条件与勾选状态。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7699718828174937379"
+}
+```
+
+#### SpicyTater：选择器与菜单别混用 (`spt-picker-menu`)
+
+```json
+{
+  "id": "spt-picker-menu",
+  "title": "SpicyTater：选择器与菜单别混用",
+  "category": "细节优化",
+  "styles": [
+    "下拉",
+    "选型",
+    "章节摘录"
+  ],
+  "scenario": "跟 AI 说做个下拉框总不好用时",
+  "prompt": "Distinguish pickers from menus: a picker selects a value, a menu issues an action. Few options can be shown directly; when they don't fit, use a picker; two options are not automatically a toggle switch. Many options need grouping and a scrollable list that never overflows the screen. Familiar values can be typed directly; when space is tight, flip the opening direction. When briefing an AI, state: what is being chosen, what happens after choosing, and where the result stays. A music app's 'pick a song and keep browsing' is not the same as 'choose an action and dismiss'.",
+  "prompt_zh": "SpicyTater 第31集：选择器用于选择、菜单用于操作；选项少直展、多则分组滚动；明确选什么、选完做什么、结果留在哪。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7701961806482279715"
+}
+```
+
+#### SpicyTater：底部浮层 5 种区分 (`spt-bottom-layers`)
+
+```json
+{
+  "id": "spt-bottom-layers",
+  "title": "SpicyTater：底部浮层 5 种区分",
+  "category": "移动端App",
+  "styles": [
+    "底部浮层",
+    "组件选型",
+    "章节摘录"
+  ],
+  "scenario": "移动端底部弹出的东西分不清该用哪种时",
+  "prompt": "Tell bottom layers apart: Action Sheet — bottom action panel, dismisses right after choosing; Bottom Sheet — expandable sheet that stays where released, its inner content can scroll (e.g. keep browsing songs); Snack Bar — bottom notice whose height follows content and screen, never full-screen by default; Tour — guided walkthrough that skips steps the user already knows; Lightbox — image viewer for detail, without leaving the page; plus inline validation — show the error where it happened.",
+  "prompt_zh": "SpicyTater 第30集：Action Sheet/Bottom Sheet/Snack Bar/Tour/Lightbox 五种底部浮层的区别与行内验错。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7701274323436227880"
+}
+```
+
+#### SpicyTater：多语言按钮防挤爆 (`spt-i18n-overflow`)
+
+```json
+{
+  "id": "spt-i18n-overflow",
+  "title": "SpicyTater：多语言按钮防挤爆",
+  "category": "细节优化",
+  "styles": [
+    "国际化",
+    "响应式",
+    "文案摘录"
+  ],
+  "scenario": "界面切换语言后按钮被长译文挤爆时",
+  "prompt": "Design buttons for long translations: never shrink the font to force-fit long text; let buttons grow with content, allow the action bar to wrap, or switch to full-width taller buttons; then verify with real translations, narrow windows and larger font sizes, checking for clipping, collisions and horizontal overflow.",
+  "prompt_zh": "SpicyTater 第35集：长译文别缩字硬塞；让按钮增长、操作栏换行或全宽增高；用真实译文+窄窗口+大字号查裁切/碰撞/横向溢出。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7707974421738278187"
+}
+```
+
+#### SpicyTater：圆角看整体轮廓 (`spt-radius-contour`)
+
+```json
+{
+  "id": "spt-radius-contour",
+  "title": "SpicyTater：圆角看整体轮廓",
+  "category": "细节优化",
+  "styles": [
+    "圆角",
+    "轮廓",
+    "文案摘录"
+  ],
+  "scenario": "圆角越调越大还是不像设计稿时",
+  "prompt": "Fix corner radius as a whole contour, not a number: stop only increasing the radius; lock the element's size and layout first, then compare the corner transition curve; make image clipping, strokes and shadows all follow the same contour; finally re-check at normal size and in narrow cards for show-through gaps and squeezed text.",
+  "prompt_zh": "SpicyTater 第34集：别只改半径；锁尺寸布局、比转弯过渡、让裁切/描边/阴影沿用同一轮廓、回正常与窄卡片查露底挤字。与已验证的同心圆角互补。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7707970051038645546"
+}
+```
+
+#### SpicyTater：聊天页滚动位置锚定 (`spt-chat-scroll-anchor`)
+
+```json
+{
+  "id": "spt-chat-scroll-anchor",
+  "title": "SpicyTater：聊天页滚动位置锚定",
+  "category": "AI产品",
+  "styles": [
+    "聊天界面",
+    "滚动",
+    "文案摘录"
+  ],
+  "scenario": "聊天页新消息一来就把用户拽走时",
+  "prompt": "Anchor chat scrolling to the reader: new messages may keep streaming in, but never decide for the user where they are reading; when the user scrolls up, pause auto-follow; resume following when they return to the bottom; when loading history above, keep the currently read message exactly in place.",
+  "prompt_zh": "SpicyTater 第36集（2026-11-17 当天新作）：上翻暂停跟随、回到底部恢复、加载历史保住当前消息位置。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7707976118627798312"
+}
+```
+
+#### SpicyTater：图片交互 7 种 (`spt-image-interactions-7`)
+
+```json
+{
+  "id": "spt-image-interactions-7",
+  "title": "SpicyTater：图片交互 7 种",
+  "category": "细节优化",
+  "styles": [
+    "图片交互",
+    "动效",
+    "章节摘录"
+  ],
+  "scenario": "给图片展示加高级交互时（多为动效类）",
+  "prompt": "Add advanced image interactions: before-after slider — drag a divider to change the revealed range; mask reveal — pointer or finger movement uncovers the image; pixel transition — pixel blocks cover the frame then dissolve to reveal the next image; ripple distortion — ripples follow the pointer and decay after it stops; sticker peel — the image peels from a corner like a sticker, revealing content beneath; image trail — images spawn along the pointer path and shrink/fade after a pause; glare hover — a highlight follows the pointer across the card.",
+  "prompt_zh": "SpicyTater 图片交互篇：前后对比滑块/遮罩揭示/像素转场/水波扭曲/贴纸揭起/图片拖尾/悬停反光 7 种。动效类，验证需 GIF。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7682679805443149108"
+}
+```
+
+#### SpicyTater：无限画布 5 指令 (`spt-infinite-canvas`)
+
+```json
+{
+  "id": "spt-infinite-canvas",
+  "title": "SpicyTater：无限画布 5 指令",
+  "category": "细节优化",
+  "styles": [
+    "无限画布",
+    "协作工具",
+    "章节摘录"
+  ],
+  "scenario": "做白板/无限画布类产品时",
+  "prompt": "Build infinite-canvas interactions: pan & zoom — zoom around the pointer position, drag empty space to pan, cards keep relative positions; multi-selection & grouping — rubber-band select and group, moving a group keeps internal distances; connector binding — connectors bind to cards and anchor points, paths update while dragging, support reconnect and delete; auto layout — arrange by content type while preserving connectors and groups, with undo; minimap navigation — minimap shows content distribution and the current viewport, click to jump, drag the viewport box.",
+  "prompt_zh": "SpicyTater 第13集：缩放中心/框选成组/连线绑定/自动布局/小地图导航 5 条无限画布指令。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-17T23:11:51+08:00",
+  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
+  "source_video": "https://www.douyin.com/video/7684165291919543586"
+}
+```
