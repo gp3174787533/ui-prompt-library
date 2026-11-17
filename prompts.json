@@ -348,13 +348,13 @@
         "Cursor"
       ],
       "preview_img": "previews/detail-spacing-rhythm.png",
-      "preview_gif": "previews/detail-spacing-rhythm.gif",
       "verified": {
         "date": "2026-11-17",
         "method": "按提示词实际生成 UI 效果图并逐张目检",
         "result": "pass",
         "note": "生成图为项目管理后台：分组间距分明、卡片内边距一致、标题与主按钮周围留白充足，通过"
-      }
+      },
+      "preview_type": "static"
     },
     {
       "id": "detail-color-restraint",
@@ -374,13 +374,13 @@
         "Cursor"
       ],
       "preview_img": "previews/detail-color-restraint.png",
-      "preview_gif": "previews/detail-color-restraint.gif",
       "verified": {
         "date": "2026-11-17",
         "method": "按提示词实际生成 UI 效果图并逐张目检",
         "result": "pass",
         "note": "生成图为电商后台 ShopAdmin：仅蓝色主色+中性灰，红色只出现在错误徽章，通过"
-      }
+      },
+      "preview_type": "static"
     },
     {
       "id": "detail-feizhang-five",
@@ -400,13 +400,13 @@
         "Cursor"
       ],
       "preview_img": "previews/detail-feizhang-five.png",
-      "preview_gif": "previews/detail-feizhang-five.gif",
       "verified": {
         "date": "2026-11-17",
         "method": "按提示词实际生成 UI 效果图并逐张目检",
         "result": "pass",
         "note": "生成图为带侧边栏的分析后台：KPI 大数字、折线图、表格、嵌套卡片柔和阴影，五件套特征可见，通过"
-      }
+      },
+      "preview_type": "static"
     },
     {
       "id": "detail-concentric-radius",
@@ -425,13 +425,13 @@
         "Cursor"
       ],
       "preview_img": "previews/detail-concentric-radius.png",
-      "preview_gif": "previews/detail-concentric-radius.gif",
       "verified": {
         "date": "2026-11-17",
         "method": "按提示词实际生成 UI 效果图并逐张目检",
         "result": "pass",
         "note": "生成图为嵌套卡片示意图：外层 24px / 内层 8px 并标注公式，外内圆角平行顺滑，通过"
-      }
+      },
+      "preview_type": "static"
     }
   ]
 }
