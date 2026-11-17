@@ -3,6 +3,8 @@
 给 AI 生成 UI（v0 / Lovable / Cursor / Qoder / 即梦 / Midjourney 等）用的提示词库。
 由 Muse 用 `ui-prompt-library` Skill 维护，peng 在「AI生成UI创意提示词」空间里浏览、复制、收藏。
 
+> **Agent 先读 `SKILL.md`**（仓库根目录）：里面写了做 UI 设计时怎么选提示词（收藏优先、已验证优先）和完整的收集/入库/验证/提交流程。
+
 ## 结构
 
 - `prompts.json` — 全库机器可读数据（Skill 和空间的数据源）：id、标题、分类、风格标签、场景、英文提示词（复制用）、中文说明、适用工具
