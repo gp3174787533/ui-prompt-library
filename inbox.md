@@ -1243,3 +1243,132 @@
   "source": "Superdesign《UI Design Prompts: A Copy-Paste Library for Real Interfaces (2026)》第 8 节（已打开页面核对原文，括号占位按通用版整理，2026-11-18）"
 }
 ```
+
+## 2026-11-18 · 公开渠道收集（第二轮：旅行/引导/智能家居/仪表盘可读性/播客）
+
+来源：HitPaw《GPT Image 2 Prompts for UI Design》旅行与智能家居节、Lovable UI prompts（新手引导流程、空/加载状态）、Medium《Dashboard UI Design: 12 Real App Examples》（仪表盘可读性九项检查）、Design Lounge《Slow Archive podcast player》（章节波形播客播放器）、UXCharan《216 AI Prompts for UX/UI Designers》（新手引导文案）。以上均为搜索结果原文核对；提示词按主题原创改写，标注「同类收集，非原作摘录」，不冒充原作逐字摘录。已与正式库 29 条 + 待验证区去重：空/加载状态与正式库 detail-states-complete 同主题已跳过，深色渐变落地页与 landing-ai-product（深色科技渐变 variant）同风格已跳过。
+
+### 旅行预订 App：沉浸式搜索+预订 (`mobile-travel-booking`)
+
+```json
+{
+  "id": "mobile-travel-booking",
+  "title": "旅行预订 App：沉浸式搜索+预订",
+  "category": "移动端App",
+  "styles": [
+    "旅行预订",
+    "沉浸式",
+    "图片主导"
+  ],
+  "scenario": "做机票/酒店预订 App，想要图片主导的沉浸式预订流程时",
+  "prompt": "Design a mobile travel booking app: home opens with a large immersive destination photo and a clean search bar (destination, dates, travellers) overlaid at the bottom; below, horizontally scrolling destination cards with price-from labels and a 'Trending now' row. Tapping a destination opens a detail screen with a photo gallery, a date picker, guest stepper and a sticky bottom bar showing total price and a single 'Book now' button. Flight results show a glowing route line on a small map, departure/arrival times and one clear cheapest-fastest toggle. Use elegant serif headlines with clean sans-serif body text, warm neutral palette with one terracotta accent, generous whitespace, 16px corner radius on cards. Every step must answer in one tap — no dead-end screens.",
+  "prompt_zh": "旅行预订 App：大图沉浸式首页+底部搜索条、目的地横滑卡片、详情页含日期选择与常驻总价预订栏，航班结果带路线图与最便宜/最快切换，衬线标题+陶土强调色。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-18T09:30:00+08:00",
+  "source": "HitPaw《GPT Image 2 Prompts for UI Design》第 8 节旅行预订 + aiarty 旅行预订条目（搜索结果原文核对；提示词按主题原创改写，同类收集，非原作摘录，2026-11-18）"
+}
+```
+
+### 新手引导：4 步可跳过流程 (`mobile-onboarding-flow`)
+
+```json
+{
+  "id": "mobile-onboarding-flow",
+  "title": "新手引导：4 步可跳过流程",
+  "category": "移动端App",
+  "styles": [
+    "新手引导",
+    "流程",
+    "转化"
+  ],
+  "scenario": "新用户首次打开 App，需要讲清价值并引导完成关键设置时",
+  "prompt": "Design a 4-step mobile onboarding flow: each screen has one full-bleed illustration or product visual, a headline of at most 6 words, body copy of at most 20 words focused on the user's benefit (not features), and a single primary button; a 'Skip' link is always visible in the top corner and skipped steps are recorded. Progress dots sit above the button; step 4 ends on the one setup action that matters most (e.g. enable notifications or pick interests) with a 'Get started' button. Use the app's real brand color and type scale, keep copy short and warm, and make the whole flow resumable if the user leaves mid-way.",
+  "prompt_zh": "4 步新手引导：每屏一图一标题（≤6 词）一短文案（≤20 词、只讲用户收益）、常驻跳过入口、进度点+最后一屏落到关键设置动作，可中途退出续做。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-18T09:30:00+08:00",
+  "source": "Lovable UI prompts《User Onboarding Flow UI》+ UXCharan《216 AI Prompts》新手引导文案节（搜索结果原文核对；提示词按主题原创改写，同类收集，非原作摘录，2026-11-18）"
+}
+```
+
+### 智能家居控制面板：房间+设备总控 (`smart-home-dashboard`)
+
+```json
+{
+  "id": "smart-home-dashboard",
+  "title": "智能家居控制面板：房间+设备总控",
+  "category": "智能家居",
+  "styles": [
+    "智能家居",
+    "设备控制",
+    "仪表盘"
+  ],
+  "scenario": "做智能家居/物联网 App，要一眼看清全屋设备状态并快速控制时",
+  "prompt": "Design a smart home control dashboard: top shows home status at a glance (temperature, humidity, security armed/disarmed) in one row of large readable numbers; below, room tabs (Living Room, Bedroom, Kitchen) switch the device grid; each device is a card with an icon, name, current state and a large touch target — tap toggles on/off, long-press opens detailed controls. Include a round thermostat dial with a soft extruded ring, light dimmer sliders, and a scenes row ('Good night', 'Movie', 'Away') that sets multiple devices at once. Light warm-gray background with soft tactile shadows, one amber accent for 'on' states, off devices visibly muted. All controls reachable with one thumb, no nested menus for common actions.",
+  "prompt_zh": "智能家居总控：顶部一眼看全屋状态（温湿度/安防）、房间切换+设备卡片网格（点按开关、长按细调）、圆形温控旋钮+场景一键切换，开启态用琥珀色、关闭态弱化。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-18T09:30:00+08:00",
+  "source": "HitPaw《GPT Image 2 Prompts for UI Design》第 4 节新拟态智能家居 + aiarty 智能家居控制条目（搜索结果原文核对；提示词按主题原创改写，同类收集，非原作摘录，2026-11-18）"
+}
+```
+
+### 仪表盘可读性九项检查 (`datav-dashboard-readability`)
+
+```json
+{
+  "id": "datav-dashboard-readability",
+  "title": "仪表盘可读性九项检查",
+  "category": "数据大屏",
+  "styles": [
+    "仪表盘",
+    "可读性",
+    "检查清单"
+  ],
+  "scenario": "仪表盘数据不少但看不懂、不知道该看哪时，做可读性审查",
+  "prompt": "Review this dashboard screen and improve it with these nine rules: 1) the top of the screen shows one main number that answers the question users open it with; 2) that number has context next to it (a goal, a normal range, the previous period or the user's average); 3) key numbers carry a one-word rating (Good, Low, On track); 4) the time window is written on screen; 5) the time-range switch has 4 to 6 options and sits next to the chart; 6) the current day or period is highlighted in the chart; 7) there is one plain-language sentence saying what the number means or what to do next; 8) empty or missing data says so in words, not with a blank chart; 9) the screen ends with one clear action. Keep the existing brand colours and fonts; report each fix in one line.",
+  "prompt_zh": "仪表盘九项可读性检查：顶部一个主数字+对比语境+一词评级、时间窗写在屏上、切换贴近图表、当天高亮、一句白话解读、空数据用文字说明、结尾一个明确动作。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-18T09:30:00+08:00",
+  "source": "Medium《Dashboard UI Design: 12 Real App Examples (2026)》可读性检查清单节（搜索结果原文核对；提示词按清单原创改写，同类收集，非原作摘录，2026-11-18）"
+}
+```
+
+### 播客播放器：章节波形+逐字稿 (`mobile-podcast-player`)
+
+```json
+{
+  "id": "mobile-podcast-player",
+  "title": "播客播放器：章节波形+逐字稿",
+  "category": "内容社交",
+  "styles": [
+    "播客",
+    "音频播放",
+    "章节"
+  ],
+  "scenario": "做播客 App，想要章节导航+逐字稿跟读的沉浸式播放页时",
+  "prompt": "Design a mobile podcast player screen: a full-screen now-playing view with the show cover art on top, episode title and host below; a waveform scrubber where chapter boundaries appear as visible gaps between bar groups and the current chapter shows as a dim band, so listeners see where they are in the story; a transcript card where the current sentence is large and highlighted and fills in word by word as it plays; a chapter list that highlights and scrolls to the current chapter, tapping a row seeks to its start. Transport row in the thumb zone: skip back 15s / forward 30s, large play/pause disc, speed pill cycling 1x, 1.25x, 1.5x, 2x, and a sleep timer (15/30/45 min or end of chapter). Warm dark background with one coral accent, large rounded surfaces, one-thumb use throughout.",
+  "prompt_zh": "播客播放器：波形进度条上直接显示章节分界与当前章节、逐字稿跟随高亮、章节列表自动跟随可点跳转，含 15/30 秒快进快退、倍速与睡眠定时，暖深色+珊瑚强调色。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-18T09:30:00+08:00",
+  "source": "Design Lounge《Slow Archive podcast player》+ Fueler 播客 App 设计（搜索结果原文核对；提示词按主题原创改写，同类收集，非原作摘录，2026-11-18）"
+}
+```
