@@ -23,97 +23,6 @@
 
 以下条目已收集整理但尚未生成验证，暂存于此；逐条生成验证通过后才移入 prompts.json 并提交。
 
-### 字体层级：三级标题拉开层次 (`detail-type-hierarchy`)
-
-```json
-{
-  "id": "detail-type-hierarchy",
-  "title": "字体层级：三级标题拉开层次",
-  "category": "细节优化",
-  "styles": [
-    "字体",
-    "层级",
-    "可读性"
-  ],
-  "scenario": "界面看着平/没重点时的字体优化",
-  "prompt": "Improve this UI's typography hierarchy: only three heading levels plus body and caption text; page title 28px semibold, section title 18px medium, body 14px regular with 1.6 line height, captions 12px in gray; use weight and size — not color — to create hierarchy; limit the design to one font family and at most 4 font sizes per screen; make numbers in data areas tabular and slightly larger.",
-  "prompt_zh": "字体只留三级标题+正文+小字：靠字重和大小分层不用颜色，一屏最多 4 种字号，正文行高 1.6，数据数字放大用等宽数字。",
-  "tools": [
-    "v0",
-    "Cursor",
-    "Qoder"
-  ]
-}
-```
-
-### 阴影与边框：细边框代替重阴影 (`detail-shadow-border`)
-
-```json
-{
-  "id": "detail-shadow-border",
-  "title": "阴影与边框：细边框代替重阴影",
-  "category": "细节优化",
-  "styles": [
-    "阴影",
-    "边框",
-    "轻量"
-  ],
-  "scenario": "卡片显脏/显廉价时的质感优化",
-  "prompt": "Fix the cheap look of these cards: replace heavy drop shadows with a 1px border (#0000000F) plus one very soft shadow (0 1px 2px rgba(0,0,0,0.04)); unify corner radius to 12px everywhere; remove inner shadows and glow effects; interactive cards may lift slightly on hover with a deeper shadow, static cards stay flat. The result should feel like Linear/Notion — quiet and precise.",
-  "prompt_zh": "卡片去廉价感：重阴影换成 1px 细边框+一层极淡阴影，圆角统一 12px，删内阴影和发光，Linear/Notion 式安静精准。",
-  "tools": [
-    "v0",
-    "Cursor"
-  ]
-}
-```
-
-### 对齐强迫症：左边缘一条线 (`detail-alignment-grid`)
-
-```json
-{
-  "id": "detail-alignment-grid",
-  "title": "对齐强迫症：左边缘一条线",
-  "category": "细节优化",
-  "styles": [
-    "对齐",
-    "网格",
-    "秩序感"
-  ],
-  "scenario": "元素参差不齐/看着歪时的对齐修正",
-  "prompt": "Audit and fix alignment in this UI: every text block, icon and button in a column must share the same left edge; icon sizes unified to 20px inside 40px touch targets; list rows share identical height and padding; form labels and inputs align to one baseline grid; no element may sit at a unique random offset — if it cannot align, remove it. Pixel-perfect order is the goal.",
-  "prompt_zh": "对齐修正：同列元素共用左边缘、图标统一 20px/点击区 40px、列表行高内边距一致、表单基线对齐，对不齐的元素宁可删掉。",
-  "tools": [
-    "v0",
-    "Cursor",
-    "Qoder"
-  ]
-}
-```
-
-### 状态补全：空/加载/错误态 (`detail-states-complete`)
-
-```json
-{
-  "id": "detail-states-complete",
-  "title": "状态补全：空/加载/错误态",
-  "category": "细节优化",
-  "styles": [
-    "状态",
-    "完整度",
-    "产品感"
-  ],
-  "scenario": "界面像半成品时的状态补全设计",
-  "prompt": "Design the missing states for this product UI so it feels finished: (1) empty state with a small illustration, one-line explanation and a primary action button; (2) skeleton loading screens matching the real layout, no spinners on white; (3) inline error states with what happened + how to retry, in plain language; (4) success confirmation that is quiet, not a confetti modal. Keep all states in the same visual language as the main UI.",
-  "prompt_zh": "补齐四种状态：空状态（小插图+一句话+主按钮）、骨架屏加载、说人话的行内错误+重试、安静的成功反馈，风格与主界面一致。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ]
-}
-```
-
 ### 微交互：hover/点击反馈 (`detail-micro-interaction`)
 
 ```json
@@ -202,8 +111,6 @@
   ]
 }
 ```
-
-
 
 ### 平衡标题换行：不留孤词 (`detail-balanced-headline`)
 
@@ -342,7 +249,6 @@
 - 一分钟入门字体设计（7694513054695869723）：字体分类知识（衬线/无衬线/几何/人文等），非生成提示词，只作知识记录，不立条目。
 
 - 文字随音乐变色动效（7699531773557869865）：属产品发布视频文字动画，非 UI 提示词，不立条目。
-
 
 ### 本批新增待验证条目（13 条）
 
@@ -676,7 +582,6 @@
 作者：SpicyTater（抖音号 xinxinyaokuaileo，湖南，独立开发者），作品 62 条，设计相关 38 条；已关注（粉丝 6056→6057）。其第22集《后台菜单交互》即 2026-11-17 用户最早分享的那条链接（7695264996816620863）。
 
 **重要局限**：本次浏览器里视频无法播放（播放器一直 00:00 加载），要点来自页面文案 + 抖音「章节要点」AI 摘要，**不是视频逐字原文**；条目已在 source 里如实标注「章节摘录」。8 条无章节要点且文案为模板/错贴，未能提取：Vibe 第33集（查数据）、第27集粒子交互、第23集高级布局、第19集编辑工具、第18集任务反馈、第17集标题动效、第8集图表动画、第4集展开面板——只在来源档案中记录，暂不立条目，待能播放时补。另有 12 条已摘录但本批未立条目（图片材质、电影感、触感、5种导航、命令面板、脱模板方法论、官网滚动、加载7种、弹窗7种、术语库、设置页以外的 Vibe 集数等），要点已在本节档案中保留，可后续提升为条目。作者称其 Skills 已开源在 GitHub 仓库 `spt-ui-interaction-skills`（文案说法，本次未核到确切网址），若后续取得仓库原文，可据原文升级这些条目。
-
 
 ### 本批新增待验证条目（20 条）
 
@@ -1197,5 +1102,144 @@
   "added_at": "2026-11-17T23:11:51+08:00",
   "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
   "source_video": "https://www.douyin.com/video/7684165291919543586"
+}
+```
+
+## 2026-11-18 · 公开渠道收集（StyleKit / ByteMint / Superdesign / YouTube 车机教程）
+
+来源核对：新拟态提示词见 Vibe Coder《Web Design Guide》1.2 节（搜索结果原文）；孟菲斯/包豪斯风格定义见 StyleKit 151 风格库与 ByteMint UI 提示词库（搜索结果原文），提示词按风格定义原创改写；交易邮件提示词见 Superdesign《UI Design Prompts》(2026) 第 8 节（已打开页面核对原文）；车机提示词据 YouTube《How to Vibe Code a Car Dashboard with Claude》简介中的计划提示词摘要改写。以上 5 条均为库里没有的风格/场景（新拟态、孟菲斯、包豪斯、车机 UI、邮件模板），只进待验证区。
+
+#### 新拟态音乐播放器 (`style-neumorphism-player`)
+
+```json
+{
+  "id": "style-neumorphism-player",
+  "title": "新拟态音乐播放器",
+  "category": "内容社交",
+  "styles": [
+    "新拟态",
+    "柔和立体",
+    "音乐播放器"
+  ],
+  "scenario": "音乐播放器/控制面板想要柔和立体触感时",
+  "prompt": "Create a neumorphism music player dashboard on a #e0e5ec background. Build raised circular play/pause buttons using dual box-shadows: box-shadow: 6px 6px 12px #b8bec7, -6px -6px 12px #ffffff. Add pressed (active) state with inset shadows: inset 4px 4px 8px #b8bec7, inset -4px -4px 8px #ffffff. Include a volume slider and a track progress bar in the same neumorphic style; album art sits in a soft recessed well, track title and artist in dark gray. Keep every element the same #e0e5ec tone so depth comes only from shadows, and keep text contrast readable.",
+  "prompt_zh": "新拟态音乐播放器：#e0e5ec 同色底、双向阴影做出凸起与按压、圆形播放键+音量滑杆+进度条，深度只靠阴影，文字对比度要可读。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-18T08:20:00+08:00",
+  "source": "Vibe Coder《Web Design Guide》1.2 新拟态节（搜索结果原文核对，2026-11-18）"
+}
+```
+
+#### 孟菲斯撞色落地页 (`landing-memphis`)
+
+```json
+{
+  "id": "landing-memphis",
+  "title": "孟菲斯撞色落地页",
+  "category": "落地页官网",
+  "styles": [
+    "孟菲斯",
+    "撞色",
+    "几何"
+  ],
+  "scenario": "创意/潮流品牌落地页想要 80 年代孟菲斯活力时",
+  "prompt": "Design a landing page in Memphis style, the 80s Italian design movement: bold geometric shapes (circles, triangles, squiggles, grids), vivid contrasting colors (hot pink, yellow, teal, black), irregular playful patterns that break the grid, thick black outlines, oversized geometric headline type. Hero with a big geometric composition, feature cards as tilted color blocks with hard shadows, playful scattered shapes across sections. Keep the copy short and the layout energetic but readable; one clear primary CTA.",
+  "prompt_zh": "孟菲斯风落地页：大胆几何图形+高饱和撞色+不规则图案+粗黑描边，活力十足但文案要短、主按钮唯一。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Framer"
+  ],
+  "group": {
+    "id": "landing-styles",
+    "name": "落地页官网 · 风格组"
+  },
+  "variant_label": "孟菲斯撞色几何",
+  "added_at": "2026-11-18T08:20:00+08:00",
+  "source": "StyleKit 151 风格库 + ByteMint UI 提示词库孟菲斯条目（搜索结果原文核对；提示词按风格定义原创改写，同类收集，2026-11-18）"
+}
+```
+
+#### 包豪斯几何官网 (`landing-bauhaus`)
+
+```json
+{
+  "id": "landing-bauhaus",
+  "title": "包豪斯几何官网",
+  "category": "落地页官网",
+  "styles": [
+    "包豪斯",
+    "几何",
+    "现代主义"
+  ],
+  "scenario": "设计/建筑/文化机构官网想要包豪斯现代主义时",
+  "prompt": "Design a website in Bauhaus style: functionalist modernism built only from circles, squares and triangles, thick black borders, hard offset shadows, and pure Bauhaus primaries (red, blue, yellow) plus black and off-white. Asymmetric architectural layout, oversized geometric headline, grid-based sections, no gradients, no rounded corners, no decoration beyond geometry. Form follows function — every shape earns its place.",
+  "prompt_zh": "包豪斯风官网：只用圆/方/三角+粗黑边+硬偏移阴影+红蓝黄三原色，非对称建筑感布局，无渐变无圆角。",
+  "tools": [
+    "v0",
+    "Framer",
+    "Cursor"
+  ],
+  "group": {
+    "id": "landing-styles",
+    "name": "落地页官网 · 风格组"
+  },
+  "variant_label": "包豪斯几何原色",
+  "added_at": "2026-11-18T08:20:00+08:00",
+  "source": "StyleKit 151 风格库 + ByteMint UI 提示词库包豪斯条目（搜索结果原文核对；提示词按风格定义原创改写，同类收集，2026-11-18）"
+}
+```
+
+#### 车机中控屏：特斯拉风 (`car-infotainment-tesla`)
+
+```json
+{
+  "id": "car-infotainment-tesla",
+  "title": "车机中控屏：特斯拉风",
+  "category": "车机出行",
+  "styles": [
+    "车机",
+    "深色",
+    "信息娱乐"
+  ],
+  "scenario": "车机/中控大屏 UI 设计时",
+  "prompt": "Design a Tesla-style car infotainment screen, 1280x720 landscape touchscreen, plain HTML/CSS/JS, no photos: left third shows a top-down car in inline SVG, gear selector P R N D, large speed readout, battery percentage and range; right panel shows a stylised city map with a blue route line, next-turn card and ETA; bottom dock holds driver temperature, music controls, fan speed and seat controls. Colors: base #0B0D10, glass panels #15181D, borders #262B33, accent cyan #2FD3FF, text #E8ECF1. Big touch targets, glanceable while driving, no small text.",
+  "prompt_zh": "特斯拉风车机中控：1280×720 横屏、左车况+中地图+下快捷坞，深色玻璃面板+青色强调色，驾驶时一眼可读。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-18T08:20:00+08:00",
+  "source": "YouTube《How to Vibe Code a Car Dashboard with Claude》（据视频简介的计划提示词摘要改写，同类收集，2026-11-18）"
+}
+```
+
+#### 交易邮件模板：欢迎/验证 (`email-transactional`)
+
+```json
+{
+  "id": "email-transactional",
+  "title": "交易邮件模板：欢迎/验证",
+  "category": "邮件模板",
+  "styles": [
+    "邮件",
+    "交易邮件",
+    "极简"
+  ],
+  "scenario": "欢迎/验证类交易邮件模板设计时",
+  "prompt": "Design a welcome / email-verification transactional email. Single-column layout, max 600px wide, works in dark and light mail clients. Structure: small logo at top, a clear headline, one short paragraph of context, one prominent primary button (the single action), a plain-text fallback link under it, and a simple footer (company, address, unsubscribe). Visual system: minimal, high-contrast, one brand color on the button only, system fonts, generous padding. Tone: warm and human, one sentence of personality. Avoid image-only emails, multiple competing CTAs, and tiny tap targets.",
+  "prompt_zh": "交易邮件（欢迎/验证）：单栏 600px、一个主按钮+纯文本备用链接、系统字体、品牌色只用在按钮上，深浅邮件客户端都可用。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-18T08:20:00+08:00",
+  "source": "Superdesign《UI Design Prompts: A Copy-Paste Library for Real Interfaces (2026)》第 8 节（已打开页面核对原文，括号占位按通用版整理，2026-11-18）"
 }
 ```

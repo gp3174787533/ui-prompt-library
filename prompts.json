@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "categories": [
     "AI产品",
     "SaaS后台",
@@ -509,6 +509,194 @@
       },
       "preview_type": "static",
       "added_at": "2026-11-17T20:20:15+08:00"
+    },
+    {
+      "id": "detail-staggered-entrance",
+      "title": "错开入场：元素依次登场",
+      "category": "细节优化",
+      "styles": [
+        "动效",
+        "入场",
+        "细节"
+      ],
+      "scenario": "页面/卡片首次出现的入场动画",
+      "prompt": "Stagger the entrance animation: split the block into icon, title, body text and button, and let them fade/slide in one after another with about 100ms stagger between elements instead of everything appearing at once. Keep each animation short (200-300ms, ease-out) so it feels ordered and calm, never bouncy.",
+      "prompt_zh": "入场要错开：图标、标题、正文、按钮拆开依次入场，间隔约 100ms，不要整块一起蹦出来。源自费纸张视频细节3（片尾汇总为100ms间隔）。",
+      "tools": [
+        "v0",
+        "Lovable"
+      ],
+      "preview_img": "previews/detail-staggered-entrance.png",
+      "preview_gif": "previews/detail-staggered-entrance.gif",
+      "preview_type": "motion",
+      "verified": {
+        "date": "2026-11-17",
+        "method": "按提示词实际生成 UI 效果图并逐张目检",
+        "result": "pass",
+        "note": "生成图为协作功能卡片：图标、标题、正文、按钮四元素依次排列并标注 0/100/200/300ms 错开与 200-300ms ease-out，GIF 真实呈现依次入场，通过"
+      },
+      "added_at": "2026-11-17T21:37:40+08:00"
+    },
+    {
+      "id": "detail-tabular-nums",
+      "title": "等宽数字：数字不跳动",
+      "category": "细节优化",
+      "styles": [
+        "数字",
+        "字体",
+        "细节"
+      ],
+      "scenario": "价格/计时器/数据表格等数字会变化的界面",
+      "prompt": "Use tabular numbers everywhere numbers can change (prices, timers, counters, tables): font-variant-numeric: tabular-nums; so every digit has the same width and values never shift or jitter when they update. Apply it to KPI figures, prices, countdowns and any numeric column by default.",
+      "prompt_zh": "会变的数字一律等宽：font-variant-numeric: tabular-nums，每个数字一样宽，更新时不左右跳。源自费纸张视频细节1。",
+      "tools": [
+        "v0",
+        "Cursor",
+        "Qoder"
+      ],
+      "preview_img": "previews/detail-tabular-nums.png",
+      "preview_type": "static",
+      "verified": {
+        "date": "2026-11-17",
+        "method": "按提示词实际生成 UI 效果图并逐张目检",
+        "result": "pass",
+        "note": "生成图为分析后台：KPI 数字、价格表数字列对齐整齐，倒计时 00:12:34:56 以等宽数字呈现，通过"
+      },
+      "added_at": "2026-11-17T21:37:40+08:00"
+    },
+    {
+      "id": "saas-settings-master-detail",
+      "title": "设置页主从布局",
+      "category": "SaaS后台",
+      "styles": [
+        "主从布局",
+        "表单",
+        "设置"
+      ],
+      "scenario": "产品设置/账户/团队管理页",
+      "prompt": "Design a settings page in a master-detail layout: left vertical nav (Profile, Account, Notifications, Billing, Security, Team) with the active item highlighted; right panel shows the active section as grouped cards, each setting as one row — title and helper text on the left, the control (toggle, select or button) on the right, comfortable 56px row height. Save per section and show a sticky 'Unsaved changes' bar at the bottom only when edits are pending. Put destructive actions in a separate red-bordered 'Danger zone' card at the very bottom. Calm neutral palette, one accent, no endless ungrouped scroll.",
+      "prompt_zh": "设置页主从布局：左侧分组导航、右侧按卡分组的设置行（标题+说明+右侧控件）、有改动才吸底保存条、危险操作单独红框放最底。",
+      "tools": [
+        "v0",
+        "Cursor",
+        "Lovable"
+      ],
+      "preview_img": "previews/saas-settings-master-detail.png",
+      "preview_type": "static",
+      "verified": {
+        "date": "2026-11-17",
+        "method": "按提示词实际生成 UI 效果图并逐张目检",
+        "result": "pass",
+        "note": "生成图为设置页：左侧六项导航 Notifications 高亮，右侧分组卡片行式设置（左标题说明、右开关/下拉），底部 Unsaved changes 吸底条与红色 Danger zone 卡片均出现，通过"
+      },
+      "added_at": "2026-11-17T21:37:40+08:00"
+    },
+    {
+      "id": "detail-type-hierarchy",
+      "title": "字体层级：三级标题拉开层次",
+      "category": "细节优化",
+      "styles": [
+        "字体",
+        "层级",
+        "可读性"
+      ],
+      "scenario": "界面看着平/没重点时的字体优化",
+      "prompt": "Improve this UI's typography hierarchy: only three heading levels plus body and caption text; page title 28px semibold, section title 18px medium, body 14px regular with 1.6 line height, captions 12px in gray; use weight and size — not color — to create hierarchy; limit the design to one font family and at most 4 font sizes per screen; make numbers in data areas tabular and slightly larger.",
+      "prompt_zh": "字体只留三级标题+正文+小字：靠字重和大小分层不用颜色，一屏最多 4 种字号，正文行高 1.6，数据数字放大用等宽数字。",
+      "tools": [
+        "v0",
+        "Cursor",
+        "Qoder"
+      ],
+      "preview_img": "previews/detail-type-hierarchy.png",
+      "preview_type": "static",
+      "verified": {
+        "date": "2026-11-18",
+        "method": "按提示词实际生成 UI 效果图并逐张目检",
+        "result": "pass",
+        "note": "生成图为项目管理后台：28px 大标题、18px 分区标题、14px 正文、12px 说明，层级全靠字重字号，数据数字等宽放大，通过"
+      },
+      "added_at": "2026-11-18T08:04:00+08:00"
+    },
+    {
+      "id": "detail-shadow-border",
+      "title": "阴影与边框：细边框代替重阴影",
+      "category": "细节优化",
+      "styles": [
+        "阴影",
+        "边框",
+        "轻量"
+      ],
+      "scenario": "卡片显脏/显廉价时的质感优化",
+      "prompt": "Fix the cheap look of these cards: replace heavy drop shadows with a 1px border (#0000000F) plus one very soft shadow (0 1px 2px rgba(0,0,0,0.04)); unify corner radius to 12px everywhere; remove inner shadows and glow effects; interactive cards may lift slightly on hover with a deeper shadow, static cards stay flat. The result should feel like Linear/Notion — quiet and precise.",
+      "prompt_zh": "卡片去廉价感：重阴影换成 1px 细边框+一层极淡阴影，圆角统一 12px，删内阴影和发光，Linear/Notion 式安静精准。",
+      "tools": [
+        "v0",
+        "Cursor"
+      ],
+      "preview_img": "previews/detail-shadow-border.png",
+      "preview_type": "static",
+      "verified": {
+        "date": "2026-11-18",
+        "method": "按提示词实际生成 UI 效果图并逐张目检",
+        "result": "pass",
+        "note": "生成图为数据后台（重验后）：四张 KPI 卡单行排列无重叠，1px 细边框+一层极淡阴影、圆角统一 12px，其中一张轻微抬起为悬停态，通过；首版生成有两张卡片重叠，已重生成"
+      },
+      "added_at": "2026-11-18T08:04:00+08:00"
+    },
+    {
+      "id": "detail-alignment-grid",
+      "title": "对齐强迫症：左边缘一条线",
+      "category": "细节优化",
+      "styles": [
+        "对齐",
+        "网格",
+        "秩序感"
+      ],
+      "scenario": "元素参差不齐/看着歪时的对齐修正",
+      "prompt": "Audit and fix alignment in this UI: every text block, icon and button in a column must share the same left edge; icon sizes unified to 20px inside 40px touch targets; list rows share identical height and padding; form labels and inputs align to one baseline grid; no element may sit at a unique random offset — if it cannot align, remove it. Pixel-perfect order is the goal.",
+      "prompt_zh": "对齐修正：同列元素共用左边缘、图标统一 20px/点击区 40px、列表行高内边距一致、表单基线对齐，对不齐的元素宁可删掉。",
+      "tools": [
+        "v0",
+        "Cursor",
+        "Qoder"
+      ],
+      "preview_img": "previews/detail-alignment-grid.png",
+      "preview_type": "static",
+      "verified": {
+        "date": "2026-11-18",
+        "method": "按提示词实际生成 UI 效果图并逐张目检",
+        "result": "pass",
+        "note": "生成图为设置页：同列元素共用左边缘、图标统一尺寸、列表行高内边距一致、表单标签与输入框基线对齐，通过"
+      },
+      "added_at": "2026-11-18T08:04:00+08:00"
+    },
+    {
+      "id": "detail-states-complete",
+      "title": "状态补全：空/加载/错误态",
+      "category": "细节优化",
+      "styles": [
+        "状态",
+        "完整度",
+        "产品感"
+      ],
+      "scenario": "界面像半成品时的状态补全设计",
+      "prompt": "Design the missing states for this product UI so it feels finished: (1) empty state with a small illustration, one-line explanation and a primary action button; (2) skeleton loading screens matching the real layout, no spinners on white; (3) inline error states with what happened + how to retry, in plain language; (4) success confirmation that is quiet, not a confetti modal. Keep all states in the same visual language as the main UI.",
+      "prompt_zh": "补齐四种状态：空状态（小插图+一句话+主按钮）、骨架屏加载、说人话的行内错误+重试、安静的成功反馈，风格与主界面一致。",
+      "tools": [
+        "v0",
+        "Lovable",
+        "Cursor"
+      ],
+      "preview_img": "previews/detail-states-complete.png",
+      "preview_type": "static",
+      "verified": {
+        "date": "2026-11-18",
+        "method": "按提示词实际生成 UI 效果图并逐张目检",
+        "result": "pass",
+        "note": "生成图为四态同屏：空状态（小插图+一句话+主按钮）、骨架屏加载、行内错误+重试、安静成功提示，同一视觉语言，通过"
+      },
+      "added_at": "2026-11-18T08:04:00+08:00"
     }
   ]
 }
