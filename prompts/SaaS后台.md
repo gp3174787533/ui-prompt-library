@@ -41,3 +41,39 @@ Create a Kanban project board UI like Trello/Linear: horizontal columns (Backlog
 ```
 
 **中文说明**：看板协作 UI：横向列+可拖拽卡片，卡片带彩色标签、成员头像、截止日期，浅灰底白卡片。
+
+## 设置页主从布局 (`saas-settings-master-detail`)
+
+![生成验证效果图](../previews/saas-settings-master-detail.png)
+
+生成验证：✅ 2026-11-17 通过 — 生成图为设置页：左侧六项导航 Notifications 高亮，右侧分组卡片行式设置（左标题说明、右开关/下拉），底部 Unsaved changes 吸底条与红色 Danger zone 卡片均出现，通过
+
+- 风格：主从布局 / 表单 / 设置
+- 场景：产品设置/账户/团队管理页
+- 适用工具：v0、Cursor、Lovable
+
+**EN prompt（复制用）**
+
+```
+Design a settings page in a master-detail layout: left vertical nav (Profile, Account, Notifications, Billing, Security, Team) with the active item highlighted; right panel shows the active section as grouped cards, each setting as one row — title and helper text on the left, the control (toggle, select or button) on the right, comfortable 56px row height. Save per section and show a sticky 'Unsaved changes' bar at the bottom only when edits are pending. Put destructive actions in a separate red-bordered 'Danger zone' card at the very bottom. Calm neutral palette, one accent, no endless ungrouped scroll.
+```
+
+**中文说明**：设置页主从布局：左侧分组导航、右侧按卡分组的设置行（标题+说明+右侧控件）、有改动才吸底保存条、危险操作单独红框放最底。
+
+## SpicyTater：后台菜单交互 8 类选型 (`spt-admin-menu`)
+
+![生成验证效果图](../previews/spt-admin-menu.png)
+
+生成验证：✅ 2026-11-19 通过 — 生成图为 Orbit 后台：滑动高亮块选中 Dashboard、Projects 就地展开子菜单、顶部页签带高亮、⌘K 命令面板搜索条、Inbox 12 徽标+状态点、底部悬浮停靠栏齐全，通过
+
+- 风格：后台菜单、交互选型、章节摘录
+- 场景：做后台/侧栏导航菜单，不知道用哪种展开方式时
+- 适用工具：v0、Lovable、Cursor
+
+**EN prompt（复制用）**
+
+```
+Choose admin menu patterns by structure: sliding highlight block for sidebar nav and top tabs; expand-in-place submenus for hierarchical project/file trees; top drop-down panel when there are few sections but multiple entries (mouse and keyboard); floating bottom dock for frequent entries (magnify on hover, neighbours make room); command palette when entries are many (search + keyboard selection); status dots and count badges for new messages and pending items, animating the number when it changes. Pick the combination by section count, hierarchy depth and usage frequency; entries must stay obvious and reachable.
+```
+
+**中文说明**：SpicyTater 第22集（2062赞）：滑动高亮块/就地展开/顶部下落面板/底部悬浮停靠栏/命令面板/状态点徽标等 8 类后台菜单，按栏目数量、层级、频率选组合。

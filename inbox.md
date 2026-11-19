@@ -23,143 +23,9 @@
 
 以下条目已收集整理但尚未生成验证，暂存于此；逐条生成验证通过后才移入 prompts.json 并提交。
 
-### 微交互：hover/点击反馈 (`detail-micro-interaction`)
-
-```json
-{
-  "id": "detail-micro-interaction",
-  "title": "微交互：hover/点击反馈",
-  "category": "细节优化",
-  "styles": [
-    "动效",
-    "反馈",
-    "精致"
-  ],
-  "scenario": "界面死板/点了没反应感时的动效补充",
-  "prompt": "Add tasteful micro-interactions to this UI: buttons darken 8% on hover and scale to 0.98 on press; cards lift 2px with a softer shadow on hover; page and modal transitions 200ms ease-out, nothing longer; toggles and checkboxes animate their state change; loading buttons show an inline spinner and disable repeat clicks. No bouncy, playful or attention-seeking animation — everything subtle and fast.",
-  "prompt_zh": "克制的微交互：hover 变深、按下缩放 0.98、转场统一 200ms、开关/勾选有状态动画、加载按钮防重复点，不要弹跳卖萌动效。",
-  "tools": [
-    "v0",
-    "Lovable"
-  ]
-}
-```
-
-### 图标一致性：一套线性图标 (`detail-icon-consistency`)
-
-```json
-{
-  "id": "detail-icon-consistency",
-  "title": "图标一致性：一套线性图标",
-  "category": "细节优化",
-  "styles": [
-    "图标",
-    "一致性",
-    "线性"
-  ],
-  "scenario": "图标风格混杂像拼凑时的统一",
-  "prompt": "Unify all icons in this UI: one single icon set (Lucide/Feather style), outline only, 1.5px stroke, rounded line caps, 20px default size, no filled/duotone/emoji icons mixed in; icons inherit the text color of their label; every icon must pair with a text label or tooltip — no naked mystery icons. Replace any inconsistent icon instead of styling around it.",
-  "prompt_zh": "图标只用一套线性图标：描边 1.5px、圆头、20px、颜色跟文字走，禁止填充/双色/emoji 混用，每个图标配文字或提示。",
-  "tools": [
-    "v0",
-    "Cursor"
-  ]
-}
-```
-
-### 对比度与可读性检查 (`detail-contrast-a11y`)
-
-```json
-{
-  "id": "detail-contrast-a11y",
-  "title": "对比度与可读性检查",
-  "category": "细节优化",
-  "styles": [
-    "对比度",
-    "无障碍",
-    "可读性"
-  ],
-  "scenario": "字看不清/灰字太浅时的可读性修复",
-  "prompt": "Fix readability in this UI to WCAG AA: body text contrast at least 4.5:1 against its background (no light-gray text on white for real content), large headings at least 3:1; minimum body size 14px on desktop and 16px on mobile inputs; placeholder text is not a label — keep visible labels; focus states get a clear 2px outline; tap targets at least 44px on mobile. Beauty must survive at arm's length and in sunlight.",
-  "prompt_zh": "可读性到达标线：正文对比度 ≥4.5:1、真实内容不用浅灰字、移动端输入框 16px、保留可见标签、焦点 2px 描边、点击区 ≥44px。",
-  "tools": [
-    "v0",
-    "Cursor",
-    "Qoder"
-  ]
-}
-```
-
-### 视觉重量：一个页面一个主角 (`detail-visual-weight`)
-
-```json
-{
-  "id": "detail-visual-weight",
-  "title": "视觉重量：一个页面一个主角",
-  "category": "细节优化",
-  "styles": [
-    "焦点",
-    "层级",
-    "留白"
-  ],
-  "scenario": "什么都想突出等于没重点时的焦点收敛",
-  "prompt": "Rebalance the visual weight of this page so it has exactly one hero: the primary action is the only filled, colored button — all other actions become text or outline buttons; the key metric or headline is at least 2x larger than anything else; remove competing badges, banners and popups (keep at most one); dim secondary panels with a lighter background instead of borders and shadows. The eye should land in one second.",
-  "prompt_zh": "一页一个主角：主按钮是唯一实心彩色按钮、核心数字/标题至少大 2 倍、横幅徽章最多留一个、次要面板用浅底弱化，一秒抓住眼球。",
-  "tools": [
-    "v0",
-    "Lovable"
-  ]
-}
-```
-
-### 平衡标题换行：不留孤词 (`detail-balanced-headline`)
-
-```json
-{
-  "id": "detail-balanced-headline",
-  "title": "平衡标题换行：不留孤词",
-  "category": "细节优化",
-  "styles": [
-    "排版",
-    "标题",
-    "细节"
-  ],
-  "scenario": "大标题/卡片标题的换行排版",
-  "prompt": "Balance headline wrapping: apply text-wrap: balance to headings (h1/h2 and card titles) so multi-line titles break into lines of similar length and no single orphan word is left alone on the last line. Check every long title at mobile width as well.",
-  "prompt_zh": "标题换行要平衡：h1 { text-wrap: balance; }，各行长度接近，最后一行不落单一个词。源自费纸张视频细节4。",
-  "tools": [
-    "v0",
-    "Cursor"
-  ]
-}
-```
-
-- 验证记录（2026-11-17）：生成博客落地页目检不通过 — 主标题两行长度接近，但多张卡片标题末行只剩单个词（Environment / Standards / Processes），未做到无孤词，不进正式库，留待验证区改提示词后重验。
 
 ### 空间收集轮次新增（2026-11-17，同样待验证）
 
-#### Bento 便当网格功能区 (`landing-bento-grid`)
-
-```json
-{
-  "id": "landing-bento-grid",
-  "title": "Bento 便当网格功能区",
-  "category": "落地页官网",
-  "styles": [
-    "Bento网格",
-    "卡片",
-    "极简"
-  ],
-  "scenario": "SaaS/AI 产品功能展示区",
-  "prompt": "Lay out the features section as a bento grid: 6 tiles of mixed sizes on a 12-column grid, one large 2x2 tile for the hero feature with a product visual, two medium tiles and three small tiles for supporting features, equal 16px gaps and unified 20px corner radius, each tile holds exactly one heading, one line of copy and one visual — no text walls. Light neutral background #F7F7F5, white tiles with 1px border #E7E5E4, one indigo accent only on the hero tile. Stack to a single column on mobile, keep tile order by importance.",
-  "prompt_zh": "Bento 功能区：6 块大小不一的瓷砖、主功能占大格、统一 16px 间距和 20px 圆角、每格一标题一行文案一视觉，移动端单列堆叠。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Framer"
-  ]
-}
-```
 
 #### 瑞士极简网格官网 (`landing-swiss-minimal`)
 
@@ -252,30 +118,6 @@
 
 ### 本批新增待验证条目（13 条）
 
-#### 费纸张：四条规则去掉 AI 味儿（原作版） (`detail-feizhang-deai-four`)
-
-```json
-{
-  "id": "detail-feizhang-deai-four",
-  "title": "费纸张：四条规则去掉 AI 味儿（原作版）",
-  "category": "细节优化",
-  "styles": [
-    "去AI味",
-    "原作摘录",
-    "视觉规则"
-  ],
-  "scenario": "AI 生成的界面花哨、有廉价感时，一次性套用的视觉规则",
-  "prompt": "Apply these visual rules to the UI: Colors — mostly neutral colors for surfaces and text, use light/dark contrast to highlight the primary action; at most one accent color; no gradients, no glow, no colored shadows. Spacing — only use 4, 8, 12, 16, 24, 32 px; spacing inside a group must be smaller than spacing between groups. Corner radius — only use 6, 10, 16 px; for nested corners, outer radius = inner radius + padding. Alignment — elements in the same column share one left edge. Remove decorative emojis, exclamation marks and ornamental badges.",
-  "prompt_zh": "费纸张第6集原作视觉规则：中性色为主、明暗对比突出主操作、强调色最多一种、禁渐变/发光/彩色阴影；间距只用 4/8/12/16/24/32；圆角只用 6/10/16、嵌套圆角=内圆角+内边距；同列共用左边缘；删装饰表情/感叹号/徽章。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-17T22:15:10+08:00",
-  "source": "费纸张抖音（已登录核对原文，2026-11-17）"
-}
-```
 
 #### 费纸张：精致侧边栏优化（原作版） (`detail-sidebar-polish`)
 
@@ -585,31 +427,6 @@
 
 ### 本批新增待验证条目（20 条）
 
-#### SpicyTater：后台菜单交互 8 类选型 (`spt-admin-menu`)
-
-```json
-{
-  "id": "spt-admin-menu",
-  "title": "SpicyTater：后台菜单交互 8 类选型",
-  "category": "SaaS后台",
-  "styles": [
-    "后台菜单",
-    "交互选型",
-    "章节摘录"
-  ],
-  "scenario": "做后台/侧栏导航菜单，不知道用哪种展开方式时",
-  "prompt": "Choose admin menu patterns by structure: sliding highlight block for sidebar nav and top tabs; expand-in-place submenus for hierarchical project/file trees; top drop-down panel when there are few sections but multiple entries (mouse and keyboard); floating bottom dock for frequent entries (magnify on hover, neighbours make room); command palette when entries are many (search + keyboard selection); status dots and count badges for new messages and pending items, animating the number when it changes. Pick the combination by section count, hierarchy depth and usage frequency; entries must stay obvious and reachable.",
-  "prompt_zh": "SpicyTater 第22集（2062赞）：滑动高亮块/就地展开/顶部下落面板/底部悬浮停靠栏/命令面板/状态点徽标等 8 类后台菜单，按栏目数量、层级、频率选组合。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-17T23:11:51+08:00",
-  "source": "SpicyTater 抖音（2026-11-17 收集；视频未能播放，要点据页面文案与抖音章节要点摘录，非逐字原文）",
-  "source_video": "https://www.douyin.com/video/7695264996816620863"
-}
-```
 
 #### SpicyTater：App 交互动画 10 种 (`spt-app-animation-10`)
 
@@ -1273,102 +1090,241 @@
 }
 ```
 
-### 新手引导：4 步可跳过流程 (`mobile-onboarding-flow`)
+## 2026-11-19 · 公开渠道收集（Visualizee.ai 游戏 UI / Carat 简历设计）
+
+来源：Visualizee.ai《Game UI Design with AI: Interface Mockups Fast》（HUD、主菜单、背包三节）、Carat《Resume Design Prompts》（极简双栏、信息图简历两条）。以上均为已打开页面核对原文，提示词为原文摘录；库里此前没有游戏 UI 与简历/文档类条目，已与正式库 37 条 + 待验证区去重，无重复。
+
+### 科幻射击游戏 HUD：血条/弹药/小地图 (`game-hud-scifi`)
 
 ```json
 {
-  "id": "mobile-onboarding-flow",
-  "title": "新手引导：4 步可跳过流程",
+  "id": "game-hud-scifi",
+  "title": "科幻射击游戏 HUD：血条/弹药/小地图",
+  "category": "游戏娱乐",
+  "styles": [
+    "游戏UI",
+    "HUD",
+    "科幻",
+    "全息"
+  ],
+  "scenario": "做科幻射击游戏，需要血条、弹药、小地图一目了然的全息 HUD 时",
+  "prompt": "Design a sci-fi shooter HUD. Include health bar in top-left, ammunition counter in bottom-right, minimap radar in top-right corner. Holographic blue style with glowing edges, transparent panels, futuristic sans-serif typography. Clean and readable against dark backgrounds.",
+  "prompt_zh": "科幻射击 HUD：左上血条、右下弹药、右上雷达小地图，全息蓝发光边缘+透明面板，未来感无衬线字体，深色背景上清晰可读。",
+  "tools": [
+    "即梦",
+    "Midjourney",
+    "v0"
+  ],
+  "source": "Visualizee.ai《Game UI Design with AI: Interface Mockups Fast》HUD 一节（已打开页面核对原文，提示词为原文摘录，2026-11-19）",
+  "added_at": "2026-11-19T08:10:00+08:00"
+}
+```
+
+### 休闲农场模拟游戏主菜单 (`game-main-menu-cozy`)
+
+```json
+{
+  "id": "game-main-menu-cozy",
+  "title": "休闲农场模拟游戏主菜单",
+  "category": "游戏娱乐",
+  "styles": [
+    "游戏UI",
+    "主菜单",
+    "休闲",
+    "手绘"
+  ],
+  "scenario": "做休闲模拟经营游戏，需要温暖治愈的主菜单时",
+  "prompt": "Create a main menu for a cozy farming simulation game. Centered game logo at top, vertical button stack below: New Game, Continue, Settings, Quit. Soft pastel colors, rounded corners, hand-painted style with watercolor textures. Warm and inviting atmosphere.",
+  "prompt_zh": "休闲农场游戏主菜单：顶部居中 Logo，下方竖排新游戏/继续/设置/退出，柔和粉彩+圆角+手绘水彩质感，温暖治愈。",
+  "tools": [
+    "即梦",
+    "Midjourney",
+    "v0"
+  ],
+  "source": "Visualizee.ai《Game UI Design with AI: Interface Mockups Fast》主菜单一节（已打开页面核对原文，提示词为原文摘录，2026-11-19）",
+  "added_at": "2026-11-19T08:10:00+08:00"
+}
+```
+
+### RPG 背包/装备界面：网格物品栏+角色剪影 (`game-inventory-rpg`)
+
+```json
+{
+  "id": "game-inventory-rpg",
+  "title": "RPG 背包/装备界面：网格物品栏+角色剪影",
+  "category": "游戏娱乐",
+  "styles": [
+    "游戏UI",
+    "背包",
+    "RPG",
+    "暗黑奇幻"
+  ],
+  "scenario": "做 RPG 游戏，需要物品栏+装备栏的背包界面时",
+  "prompt": "Design an RPG inventory interface. Grid-based item slots on the left, character equipment panel on the right showing equipped items on a character silhouette. Dark fantasy style with stone textures, metallic borders, subtle glow on magical items. Include tabs for Weapons, Armor, Consumables, Quest Items.",
+  "prompt_zh": "RPG 背包界面：左侧网格物品栏、右侧角色剪影装备栏，暗黑奇幻风石材质+金属边框，魔法物品微光，含武器/防具/消耗品/任务物品四个页签。",
+  "tools": [
+    "即梦",
+    "Midjourney",
+    "v0"
+  ],
+  "source": "Visualizee.ai《Game UI Design with AI: Interface Mockups Fast》背包/装备一节（已打开页面核对原文，提示词为原文摘录，2026-11-19）",
+  "added_at": "2026-11-19T08:10:00+08:00"
+}
+```
+
+### 极简双栏简历模板：照片+技能条+时间线 (`doc-resume-minimal`)
+
+```json
+{
+  "id": "doc-resume-minimal",
+  "title": "极简双栏简历模板：照片+技能条+时间线",
+  "category": "简历文档",
+  "styles": [
+    "简历",
+    "双栏",
+    "极简",
+    "模板"
+  ],
+  "scenario": "做求职简历模板，需要专业干净的双栏 A4 版式时",
+  "prompt": "A single A4 resume template design viewed from directly above on a light gray marble surface. Clean two-column layout: left sidebar with circular profile photo placeholder, skill bars, and contact icons; right main area with section headers and timeline entries. Professional navy blue and white color scheme with thin gold accent lines. Modern sans-serif typography placeholder blocks. Crisp flat lay photography with even studio lighting and subtle paper shadow. No readable text, no watermark.",
+  "prompt_zh": "极简双栏简历模板：A4 平铺俯拍，左侧圆形照片占位+技能条+联系方式，右侧标题区+时间线条目，藏青白配色+细金线，现代无衬线字体占位块。",
+  "tools": [
+    "即梦",
+    "Midjourney",
+    "GPT Image"
+  ],
+  "source": "Carat《Resume Design Prompts》Minimal Resume Template（已打开页面核对原文，提示词为原文摘录，2026-11-19）",
+  "added_at": "2026-11-19T08:10:00+08:00"
+}
+```
+
+### 信息图风格简历：环形技能图+时间线 (`doc-resume-infographic`)
+
+```json
+{
+  "id": "doc-resume-infographic",
+  "title": "信息图风格简历：环形技能图+时间线",
+  "category": "简历文档",
+  "styles": [
+    "简历",
+    "信息图",
+    "创意",
+    "模板"
+  ],
+  "scenario": "做创意岗简历，想要信息图风格一页讲清经历与技能时",
+  "prompt": "A creative infographic-style resume design on a single A4 page, viewed from above on a concrete desk surface. Visual elements include circular progress charts for skills, timeline graphics for work experience, and icon-based contact section. Modern color palette of teal, charcoal, and soft coral. Clean geometric layout with generous white space. Thin lines connecting sections. Flat lay photography with directional lighting creating soft shadow on one edge. No readable text, no watermark.",
+  "prompt_zh": "信息图风格简历：A4 一页，技能环形进度图+经历时间线+图标联系区，青/炭/珊瑚配色，几何布局大留白，细线连接各区。",
+  "tools": [
+    "即梦",
+    "Midjourney",
+    "GPT Image"
+  ],
+  "source": "Carat《Resume Design Prompts》Infographic Resume Design（已打开页面核对原文，提示词为原文摘录，2026-11-19）",
+  "added_at": "2026-11-19T08:10:00+08:00"
+}
+```
+
+
+## 2026-11-19 · 公开渠道收集（登录页/日历/结账/个人主页）
+
+来源核对：登录页见 Superdesign 登录页提示词库（搜索结果原文：社交登录优先、单密码框、单主按钮、找回链接、具体报错）；日历/日程与个人主页见 Techpresso《30 Claude Prompts That Design UI Screens》对应节（搜索结果原文）；结账见 Techpresso《30 Claude Prompts That Build Checkout Pages》购物车到支付节（搜索结果原文）。以上 4 条均为库里没有的页面类型（登录页、日历、结账、个人主页），只进待验证区；提示词按来源要点原创改写，标注「同类收集，非原作摘录」。
+
+#### 登录页：社交登录优先+单主按钮 (`auth-login-page`)
+
+```json
+{
+  "id": "auth-login-page",
+  "title": "登录页：社交登录优先+单主按钮",
+  "category": "SaaS后台",
+  "styles": [
+    "登录",
+    "表单",
+    "极简"
+  ],
+  "scenario": "做登录页、默认模板总把注册和登录混在一起时",
+  "prompt": "Design a login page for a SaaS product: sign-in providers first — Google, Apple and GitHub buttons plus a passkey/magic-link option above an 'or with email' divider, so most returning users never type a password. The form: email and one password field with a show-password toggle; no confirm-password field. One primary action: a single solid Log in button; demote sign up to a quiet 'New here? Create an account' link. A 'Forgot password?' link right beside the password field. Specific error copy ('That password is not right. Reset it') and a loading state on the button. Style: neutral base, one accent color on the primary button only, named headline/body typefaces, no purple gradient. A short privacy note under the button and a clear path back to the marketing site.",
+  "prompt_zh": "登录页：社交/密钥登录放最前、邮箱+单个密码框带显示切换、一个 Log in 主按钮、注册降级为链接、密码旁放找回链接、写清具体报错与加载态，中性底+单强调色。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-19T08:18:05+08:00",
+  "source": "Superdesign 登录页提示词库（搜索结果原文核对；提示词按模板要点原创改写，同类收集，2026-11-19）"
+}
+```
+
+#### 日历/日程：月周切换+彩色事件 (`mobile-calendar-schedule`)
+
+```json
+{
+  "id": "mobile-calendar-schedule",
+  "title": "日历/日程：月周切换+彩色事件",
   "category": "移动端App",
   "styles": [
-    "新手引导",
-    "流程",
+    "日历",
+    "日程",
+    "移动端"
+  ],
+  "scenario": "做日历/排班/内容计划界面时",
+  "prompt": "Design a calendar/scheduling screen: a top bar with month/week toggle, prev/next arrows, current period label, a Today button and a create-event button; an optional mini-month on the left for navigation; the main grid — a 7-column month grid with weekday headers and date cells, or time-slotted columns for week view. Place color-coded event chips across several cells with one color per event type, one day highlighted as today; use realistic event titles. Today, selected and out-of-month days are visually distinct; event chips keep accessible contrast. Responsive and mobile-first, large tap targets, real form labels and visible focus states.",
+  "prompt_zh": "日历/日程屏：顶栏月周切换+前后翻页+今天+新建、左侧可选小月历、主网格 7 列日期格或周视图时间列、事件按类型配色、今天高亮，移动端优先、大点击区。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-19T08:18:05+08:00",
+  "source": "Techpresso《30 Claude Prompts That Design UI Screens》日历/日程节（搜索结果原文核对；提示词按要点原创改写，同类收集，2026-11-19）"
+}
+```
+
+#### 电商结账：购物车到支付 (`ecom-checkout-flow`)
+
+```json
+{
+  "id": "ecom-checkout-flow",
+  "title": "电商结账：购物车到支付",
+  "category": "电商零售",
+  "styles": [
+    "结账",
+    "电商",
     "转化"
   ],
-  "scenario": "新用户首次打开 App，需要讲清价值并引导完成关键设置时",
-  "prompt": "Design a 4-step mobile onboarding flow: each screen has one full-bleed illustration or product visual, a headline of at most 6 words, body copy of at most 20 words focused on the user's benefit (not features), and a single primary button; a 'Skip' link is always visible in the top corner and skipped steps are recorded. Progress dots sit above the button; step 4 ends on the one setup action that matters most (e.g. enable notifications or pick interests) with a 'Get started' button. Use the app's real brand color and type scale, keep copy short and warm, and make the whole flow resumable if the user leaves mid-way.",
-  "prompt_zh": "4 步新手引导：每屏一图一标题（≤6 词）一短文案（≤20 词、只讲用户收益）、常驻跳过入口、进度点+最后一屏落到关键设置动作，可中途退出续做。",
+  "scenario": "做电商购物车/结账/订单确认页时",
+  "prompt": "Design a cart-to-pay checkout page for an online store: a slim checkout header (Cart current, no marketing nav); line items with image placeholder, name, SKU, unit price, quantity stepper, line total and remove; a summary card with subtotal, shipping options, tax line and estimated total; one primary Continue to pay button; an empty-cart state with a reason to stay and recommendations. Keep money honest: mark any unverified price, tax or shipping figure as to-verify instead of inventing it; no real payment fields on the cart screen. Semantic accessible markup, visible focus, labeled inputs.",
+  "prompt_zh": "电商结账：瘦顶栏+商品行（图/名/SKU/单价/数量/小计/删除）+汇总卡（小计/运费/税/预估总价）+继续支付主按钮+空购物车挽留态；金额不确定的标待核对、不编造。",
   "tools": [
     "v0",
     "Lovable",
     "Cursor"
   ],
-  "added_at": "2026-11-18T09:30:00+08:00",
-  "source": "Lovable UI prompts《User Onboarding Flow UI》+ UXCharan《216 AI Prompts》新手引导文案节（搜索结果原文核对；提示词按主题原创改写，同类收集，非原作摘录，2026-11-18）"
+  "added_at": "2026-11-19T08:18:05+08:00",
+  "source": "Techpresso《30 Claude Prompts That Build Checkout Pages》购物车到支付节（搜索结果原文核对；提示词按要点原创改写，同类收集，2026-11-19）"
 }
 ```
 
-### 智能家居控制面板：房间+设备总控 (`smart-home-dashboard`)
+#### 个人主页/账号页：封面+数据+标签页 (`profile-account-page`)
 
 ```json
 {
-  "id": "smart-home-dashboard",
-  "title": "智能家居控制面板：房间+设备总控",
-  "category": "智能家居",
-  "styles": [
-    "智能家居",
-    "设备控制",
-    "仪表盘"
-  ],
-  "scenario": "做智能家居/物联网 App，要一眼看清全屋设备状态并快速控制时",
-  "prompt": "Design a smart home control dashboard: top shows home status at a glance (temperature, humidity, security armed/disarmed) in one row of large readable numbers; below, room tabs (Living Room, Bedroom, Kitchen) switch the device grid; each device is a card with an icon, name, current state and a large touch target — tap toggles on/off, long-press opens detailed controls. Include a round thermostat dial with a soft extruded ring, light dimmer sliders, and a scenes row ('Good night', 'Movie', 'Away') that sets multiple devices at once. Light warm-gray background with soft tactile shadows, one amber accent for 'on' states, off devices visibly muted. All controls reachable with one thumb, no nested menus for common actions.",
-  "prompt_zh": "智能家居总控：顶部一眼看全屋状态（温湿度/安防）、房间切换+设备卡片网格（点按开关、长按细调）、圆形温控旋钮+场景一键切换，开启态用琥珀色、关闭态弱化。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-18T09:30:00+08:00",
-  "source": "HitPaw《GPT Image 2 Prompts for UI Design》第 4 节新拟态智能家居 + aiarty 智能家居控制条目（搜索结果原文核对；提示词按主题原创改写，同类收集，非原作摘录，2026-11-18）"
-}
-```
-
-### 仪表盘可读性九项检查 (`datav-dashboard-readability`)
-
-```json
-{
-  "id": "datav-dashboard-readability",
-  "title": "仪表盘可读性九项检查",
-  "category": "数据大屏",
-  "styles": [
-    "仪表盘",
-    "可读性",
-    "检查清单"
-  ],
-  "scenario": "仪表盘数据不少但看不懂、不知道该看哪时，做可读性审查",
-  "prompt": "Review this dashboard screen and improve it with these nine rules: 1) the top of the screen shows one main number that answers the question users open it with; 2) that number has context next to it (a goal, a normal range, the previous period or the user's average); 3) key numbers carry a one-word rating (Good, Low, On track); 4) the time window is written on screen; 5) the time-range switch has 4 to 6 options and sits next to the chart; 6) the current day or period is highlighted in the chart; 7) there is one plain-language sentence saying what the number means or what to do next; 8) empty or missing data says so in words, not with a blank chart; 9) the screen ends with one clear action. Keep the existing brand colours and fonts; report each fix in one line.",
-  "prompt_zh": "仪表盘九项可读性检查：顶部一个主数字+对比语境+一词评级、时间窗写在屏上、切换贴近图表、当天高亮、一句白话解读、空数据用文字说明、结尾一个明确动作。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-18T09:30:00+08:00",
-  "source": "Medium《Dashboard UI Design: 12 Real App Examples (2026)》可读性检查清单节（搜索结果原文核对；提示词按清单原创改写，同类收集，非原作摘录，2026-11-18）"
-}
-```
-
-### 播客播放器：章节波形+逐字稿 (`mobile-podcast-player`)
-
-```json
-{
-  "id": "mobile-podcast-player",
-  "title": "播客播放器：章节波形+逐字稿",
+  "id": "profile-account-page",
+  "title": "个人主页/账号页：封面+数据+标签页",
   "category": "内容社交",
   "styles": [
-    "播客",
-    "音频播放",
-    "章节"
+    "个人主页",
+    "账号",
+    "社交"
   ],
-  "scenario": "做播客 App，想要章节导航+逐字稿跟读的沉浸式播放页时",
-  "prompt": "Design a mobile podcast player screen: a full-screen now-playing view with the show cover art on top, episode title and host below; a waveform scrubber where chapter boundaries appear as visible gaps between bar groups and the current chapter shows as a dim band, so listeners see where they are in the story; a transcript card where the current sentence is large and highlighted and fills in word by word as it plays; a chapter list that highlights and scrolls to the current chapter, tapping a row seeks to its start. Transport row in the thumb zone: skip back 15s / forward 30s, large play/pause disc, speed pill cycling 1x, 1.25x, 1.5x, 2x, and a sleep timer (15/30/45 min or end of chapter). Warm dark background with one coral accent, large rounded surfaces, one-thumb use throughout.",
-  "prompt_zh": "播客播放器：波形进度条上直接显示章节分界与当前章节、逐字稿跟随高亮、章节列表自动跟随可点跳转，含 15/30 秒快进快退、倍速与睡眠定时，暖深色+珊瑚强调色。",
+  "scenario": "做社交/工具类产品的个人主页或账号页时",
+  "prompt": "Design a user profile/account screen: a cover/banner band with an overlapping avatar, name, role and one primary action button (Follow / Edit / Message) anchored next to the avatar; a stat row of three to four numbers with labels (posts, followers, following, completion); a tab bar (Overview, Activity, Settings) with one visibly active tab; the default tab shows a bio block, an info card (location, joined date, links) and a recent-activity list. Use realistic sample content; keep the primary action visible on scroll.",
+  "prompt_zh": "个人主页：封面横幅+重叠头像+姓名角色+主操作按钮、3–4 项数据行、标签页（概览/动态/设置）、默认页含简介+信息卡+最近动态，主按钮滚动时不丢失。",
   "tools": [
     "v0",
     "Lovable",
     "Cursor"
   ],
-  "added_at": "2026-11-18T09:30:00+08:00",
-  "source": "Design Lounge《Slow Archive podcast player》+ Fueler 播客 App 设计（搜索结果原文核对；提示词按主题原创改写，同类收集，非原作摘录，2026-11-18）"
+  "added_at": "2026-11-19T08:18:05+08:00",
+  "source": "Techpresso《30 Claude Prompts That Design UI Screens》个人主页/账号节（搜索结果原文核对；提示词按要点原创改写，同类收集，2026-11-19）"
 }
 ```
