@@ -17,84 +17,13 @@
 ## 2026-11-17 · 公开渠道收集（Questera / Superdesign / TemplatesCenter）
 - 原文/链接：https://www.questera.ai/blogs/ai-prompts-beautiful-ui-designs（Bento 网格、瑞士极简模板，已打开核对）；https://superdesign.dev/blog/ui-design-prompts（定价页、设置页主从布局模板，已打开核对）；https://www.templatescenter.com/blogs/liquid-glass-ui-prompts-20-templates-that-work（液态玻璃五要素配方，已打开核对）
 - 状态：2026-11-17 已核对上述三页正文，按统一格式改写整理，非逐字摘录；与现有 33 条去重（避开已有粗野主义、杂志编辑风、Linear 后台等同场景同风格条目）。
-- 已处理：新增 5 条 — landing-bento-grid、landing-swiss-minimal、landing-pricing-saas（落地页官网）、saas-settings-master-detail（SaaS后台）、detail-liquid-glass（细节优化），已移入 prompts.json 与对应分类 md。本条目留档，不再待办。
+- 已处理：新增 5 条 — 其中 landing-bento-grid、saas-settings-master-detail 已移入 prompts.json；其余 3 条（landing-swiss-minimal、landing-pricing-saas、detail-liquid-glass）于 2026-11-20 本轮验证通过后移入 prompts.json 与对应分类 md。本条目留档，不再待办。
 
 ## 待验证区（2026-11-17 起执行新规：验证通过才进正式库）
 
 以下条目已收集整理但尚未生成验证，暂存于此；逐条生成验证通过后才移入 prompts.json 并提交。
 
-
 ### 空间收集轮次新增（2026-11-17，同样待验证）
-
-
-#### 瑞士极简网格官网 (`landing-swiss-minimal`)
-
-```json
-{
-  "id": "landing-swiss-minimal",
-  "title": "瑞士极简网格官网",
-  "category": "落地页官网",
-  "styles": [
-    "瑞士极简",
-    "网格",
-    "黑白"
-  ],
-  "scenario": "设计工作室/建筑/文化机构官网",
-  "prompt": "Restyle this website in a minimal Swiss International style: strict 12-column grid with visible alignment, one sans-serif typeface (Helvetica/Inter) in only two weights (regular and bold), near-black text #111111 on off-white #FAFAF8, one red accent #E30613 used only for primary actions and section numbers. No shadows, no gradients, no rounded corners, no decorative icons. Oversized left-aligned headlines, generous margins, hairline rules to separate sections, everything snaps to the grid.",
-  "prompt_zh": "瑞士极简：严格 12 栏网格、一种无衬线字体只用两档字重、近黑配米白、红色只给主操作，无阴影无渐变无圆角。",
-  "tools": [
-    "v0",
-    "Framer",
-    "Cursor"
-  ]
-}
-```
-
-#### 液态玻璃：五要素材质配方 (`detail-liquid-glass`)
-
-```json
-{
-  "id": "detail-liquid-glass",
-  "title": "液态玻璃：五要素材质配方",
-  "category": "细节优化",
-  "styles": [
-    "液态玻璃",
-    "玻璃拟态",
-    "iOS"
-  ],
-  "scenario": "卡片/导航/弹窗想要 Apple Liquid Glass 质感时",
-  "prompt": "Apply a true Liquid Glass material, not plain blur: every glass panel needs all five properties together — (1) backdrop-blur-xl, (2) translucent fill bg-white/10 on dark or bg-black/5 on light, (3) 1px border border-white/20 to define the edge, (4) soft shadow-xl for depth, and (5) a specular highlight via ring-1 ring-inset ring-white/10 plus a bg-gradient-to-br from-white/20 to transparent overlay so light catches one edge. Keep text on a solid backing or dark enough area so contrast stays at least 4.5:1; without the highlight it is just frosted glass, not liquid glass.",
-  "prompt_zh": "液态玻璃五要素缺一不可：强模糊+半透明填充+1px 亮边+柔和阴影+高光描边，文字区保 4.5:1 对比度，只有模糊不算液态玻璃。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ]
-}
-```
-
-#### SaaS 定价页三档对比 (`landing-pricing-saas`)
-
-```json
-{
-  "id": "landing-pricing-saas",
-  "title": "SaaS 定价页三档对比",
-  "category": "落地页官网",
-  "styles": [
-    "定价",
-    "转化",
-    "卡片"
-  ],
-  "scenario": "SaaS 订阅产品定价页",
-  "prompt": "Design a SaaS pricing page with 3 tiers (Starter, Pro, Team): short headline plus a monthly/annual toggle at the top with annual showing a 'Save 20%' badge; three equal-width cards with 24px gaps, the middle Pro card highlighted as 'Most Popular' with a colored border, slightly larger scale and a badge; each card shows plan name, price with billing period, one-line who-it-is-for, a primary CTA, and a feature checklist with checkmarks (unavailable features grayed out, not hidden). Below add a full feature-comparison table and an FAQ accordion. Background #FAFAF9, cards white with 1px border #E7E5E4, text #1C1917, one accent color only. No dark patterns, no hidden pricing.",
-  "prompt_zh": "SaaS 定价页：月/年切换带省 20% 徽章、三卡等宽中间档高亮为最受欢迎、每卡含人群说明+功能清单、下方对比表+FAQ，无暗黑套路。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ]
-}
-```
 
 ## 2026-11-17 晚 · 费纸张主页系统收集（用户登录抖音后逐条核对）
 
@@ -117,32 +46,6 @@
 - 文字随音乐变色动效（7699531773557869865）：属产品发布视频文字动画，非 UI 提示词，不立条目。
 
 ### 本批新增待验证条目（13 条）
-
-
-#### 费纸张：精致侧边栏优化（原作版） (`detail-sidebar-polish`)
-
-```json
-{
-  "id": "detail-sidebar-polish",
-  "title": "费纸张：精致侧边栏优化（原作版）",
-  "category": "细节优化",
-  "styles": [
-    "侧边栏",
-    "原作摘录",
-    "间距圆角"
-  ],
-  "scenario": "已有侧边栏显粗糙时，不改内容配色只做精修",
-  "prompt": "Refine this sidebar without changing its content, colors or interactions: keep the existing style; unify font sizes, corner radii and spacing; panels at the same level share the same radius, consistent with neighbouring panels; equal whitespace on both sides of the sidebar; icons slightly smaller than text with consistent icon-text gaps; every row fits its text with enough vertical padding and a generously sized click target; spacing between groups larger than spacing within groups, all following one spacing scale.",
-  "prompt_zh": "费纸张第4集原作提示词：保留内容/配色/交互，统一字号圆角间距，同级面板圆角一致、两侧留白一致，图标小于文字、图文间距一致，每行留白与点击区域足够，组间比组内松。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-17T22:15:10+08:00",
-  "source": "费纸张抖音（已登录核对原文，2026-11-17）"
-}
-```
 
 #### 费纸张：玻璃界面五步配方（原作版） (`detail-glassmorphism-five`)
 
@@ -426,7 +329,6 @@
 **重要局限**：本次浏览器里视频无法播放（播放器一直 00:00 加载），要点来自页面文案 + 抖音「章节要点」AI 摘要，**不是视频逐字原文**；条目已在 source 里如实标注「章节摘录」。8 条无章节要点且文案为模板/错贴，未能提取：Vibe 第33集（查数据）、第27集粒子交互、第23集高级布局、第19集编辑工具、第18集任务反馈、第17集标题动效、第8集图表动画、第4集展开面板——只在来源档案中记录，暂不立条目，待能播放时补。另有 12 条已摘录但本批未立条目（图片材质、电影感、触感、5种导航、命令面板、脱模板方法论、官网滚动、加载7种、弹窗7种、术语库、设置页以外的 Vibe 集数等），要点已在本节档案中保留，可后续提升为条目。作者称其 Skills 已开源在 GitHub 仓库 `spt-ui-interaction-skills`（文案说法，本次未核到确切网址），若后续取得仓库原文，可据原文升级这些条目。
 
 ### 本批新增待验证条目（20 条）
-
 
 #### SpicyTater：App 交互动画 10 种 (`spt-app-animation-10`)
 
@@ -1224,7 +1126,6 @@
 }
 ```
 
-
 ## 2026-11-19 · 公开渠道收集（登录页/日历/结账/个人主页）
 
 来源核对：登录页见 Superdesign 登录页提示词库（搜索结果原文：社交登录优先、单密码框、单主按钮、找回链接、具体报错）；日历/日程与个人主页见 Techpresso《30 Claude Prompts That Design UI Screens》对应节（搜索结果原文）；结账见 Techpresso《30 Claude Prompts That Build Checkout Pages》购物车到支付节（搜索结果原文）。以上 4 条均为库里没有的页面类型（登录页、日历、结账、个人主页），只进待验证区；提示词按来源要点原创改写，标注「同类收集，非原作摘录」。
@@ -1326,5 +1227,288 @@
   ],
   "added_at": "2026-11-19T08:18:05+08:00",
   "source": "Techpresso《30 Claude Prompts That Design UI Screens》个人主页/账号节（搜索结果原文核对；提示词按要点原创改写，同类收集，2026-11-19）"
+}
+```
+
+## 2026-11-19 · 公开渠道收集（第二轮：404/通知中心/搜索筛选/学习仪表盘/博客阅读/活动票务）
+
+来源核对：404 错误页见 Medium《Top 10 Easy Prompts for Professional UI Design with designer-skill》（第 10 条，搜索结果原文）与 Liniqo《404 page and error page design》（AI 生成器提示词与插画尺寸要点，搜索结果原文）；通知中心见 design.dev《Toast Notification Stack》提示词模板（四种类型、自动消失进度条）与 JSBits《Design a Notification Center & Toast System》（Toast + 持久通知中心双面结构，搜索结果原文）；搜索筛选见 21st.dev《Filter Menu》与《Search Results》组件说明（分组筛选、可移除 chips、清空全部、键盘导航，搜索结果原文）；学习仪表盘见 danbyers.ai《Build a Learning Dashboard with AI》（顶部四张数据卡+课程/项目进度+深色主题，搜索结果原文）；博客阅读页见同一 Medium 文第 6 条博客主页提示词与 NotVibesCoded UI 提示词库博客类（单栏阅读视图、吸顶目录，搜索结果原文）；活动票务见 Ticko 票务 App 案例研究（发现→详情→选座→结账→票据流程、分区配色选座）与 Showpass 选座地图指南（按票种分区定价、最佳座位推荐，搜索结果原文）。以上 6 条均为库里没有的页面/功能类型，只进待验证区；提示词按来源要点原创改写，标注「同类收集，非原作摘录」，不冒充原作逐字摘录。已与正式库 41 条 + 待验证区 49 条去重：404 与 detail-states-complete（通用空/加载/错误态）不同，是带品牌插画与找回路径的整页；通知中心与 spt-overlay-six（浮层选型）不同，是持久通知列表+Toast 双面系统；学习仪表盘与 saas-dashboard-linear（通用 SaaS 仪表盘）不同，是课程进度/连胜/学习时长场景；博客阅读页与 landing-editorial（杂志风落地页）不同，是长文阅读页而非营销落地页；活动票务与 ecom-checkout-flow（购物车到支付）不同，是选座地图+票种分区流程。
+
+#### 404 错误页：品牌插画+找回路径 (`error-404-page`)
+
+```json
+{
+  "id": "error-404-page",
+  "title": "404 错误页：品牌插画+找回路径",
+  "category": "细节优化",
+  "styles": [
+    "404",
+    "错误页",
+    "品牌插画"
+  ],
+  "scenario": "网站出现 404/走丢页面，想把负面体验变成品牌时刻时",
+  "prompt": "Design a creative 404 error page for this website that turns a dead end into a brand moment: a friendly one-line apology in plain words ('This page hasn't washed ashore yet' style — say what happened, no error codes as the main text), a small brand-aligned illustration above the message (160-280px on desktop, same illustration style as the site's empty states), a prominent search bar, one clear 'Return to Home' primary button plus links to popular pages, and the site's normal header and footer so it still feels like part of the product. Keep the next step visible without scrolling on a phone, use the site's own colors and typefaces, and return the proper 404 status code.",
+  "prompt_zh": "404 错误页：人话道歉+品牌插画（160–280px、与空状态同风格）+醒目搜索框+回首页主按钮与热门页链接，保留站点头尾、手机首屏可见下一步，正确返回 404 状态码。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-19T09:12:00+08:00",
+  "source": "Medium《Top 10 Easy Prompts for Professional UI Design with designer-skill》第 10 条 + Liniqo《404 page and error page design》（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）"
+}
+```
+
+#### 通知中心+Toast 双面系统 (`saas-notification-center`)
+
+```json
+{
+  "id": "saas-notification-center",
+  "title": "通知中心+Toast 双面系统",
+  "category": "SaaS后台",
+  "styles": [
+    "通知",
+    "Toast",
+    "消息中心"
+  ],
+  "scenario": "SaaS 产品需要既即时提醒又可回查的通知系统时",
+  "prompt": "Build a notification system as two surfaces sharing one data source: (1) ephemeral toasts — stacked vertically top-right with 10px gaps, four types (success, error, warning, info) each with its own accent color, icon, title and message; a 2px auto-dismiss progress bar at the bottom of each toast shrinking from 100% to 0% over its duration, hover pauses the countdown, errors never auto-dismiss, each toast has a close button and a simple show API. (2) a persistent notification center — a panel listing every event with read/unread state, actor avatar, relative time, unread count badge, mark-read and mark-all-read actions, and infinite scroll. Keep the visual language consistent across both surfaces and announce new toasts to screen readers without stealing focus.",
+  "prompt_zh": "通知双面系统：右上堆叠 Toast（四种类型各有强调色、2px 倒计时进度条、悬停暂停、错误不自动消失）+ 持久通知中心（已读/未读态、未读角标、一键已读、无限滚动），两面共用同一数据源。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-19T09:12:00+08:00",
+  "source": "design.dev《Toast Notification Stack》提示词模板 + JSBits《Design a Notification Center & Toast System》（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）"
+}
+```
+
+#### 搜索结果页：筛选侧栏+已选 chips (`search-results-filters`)
+
+```json
+{
+  "id": "search-results-filters",
+  "title": "搜索结果页：筛选侧栏+已选 chips",
+  "category": "SaaS后台",
+  "styles": [
+    "搜索",
+    "筛选",
+    "列表"
+  ],
+  "scenario": "做内容/商品/文档搜索结果页，需要侧栏筛选时",
+  "prompt": "Design a search results page with a filter sidebar: a search bar at the top with the query and result count ('128 results for \"…\"'); a left filter sidebar with collapsible checkbox groups (category, date, type, status), each group showing counts; active filters shown as removable chips above the results with a 'Clear all' action; results as a clean list (title, snippet with the matching text in bold, source and date) or an image grid toggle; a sort control (relevance/newest) and pagination or infinite scroll. On mobile the sidebar collapses into a filter button opening a bottom sheet. Full keyboard navigation, visible focus, and never let filters push results below the fold on desktop.",
+  "prompt_zh": "搜索结果页：顶部搜索框+结果数、左侧可折叠复选框筛选分组（带数量）、已选条件以 chips 显示可逐个移除+清空全部、结果列表关键词加粗或图片网格切换、排序与分页，移动端筛选项收进底部浮层。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-19T09:12:00+08:00",
+  "source": "21st.dev《Filter Menu》与《Search Results》组件说明（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）"
+}
+```
+
+#### 在线学习仪表盘：进度+连胜+学习时长 (`edu-learning-dashboard`)
+
+```json
+{
+  "id": "edu-learning-dashboard",
+  "title": "在线学习仪表盘：进度+连胜+学习时长",
+  "category": "在线教育",
+  "styles": [
+    "学习仪表盘",
+    "进度",
+    "深色"
+  ],
+  "scenario": "做在线课程/学习平台的个人学习进度仪表盘时",
+  "prompt": "Build a learning progress dashboard: a header with the title 'Learning Dashboard' and today's date; a stats row of 4 cards at the top — total lessons completed (out of 24), total projects completed (out of 11), current streak in days, and total study hours — each card with a large number, a label and a small icon; below, two side-by-side sections: on the left a lesson list with animated progress bars and completion checkmarks, on the right weekly progress and study-hours charts plus a streak counter that tracks consecutive days of activity. Use a dark theme with clean modern styling and clear visual hierarchy, progress bars animate on load, and keep the layout scannable at a glance.",
+  "prompt_zh": "学习仪表盘：顶栏标题+今日日期、四张数据卡（已完成课时/项目/连续天数/学习时长）、左侧课程列表带动画进度条、右侧周进度与学时图表+连胜计数，深色主题、层级清晰、一眼可读。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-19T09:12:00+08:00",
+  "source": "danbyers.ai《Build a Learning Dashboard with AI》（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）"
+}
+```
+
+#### 博客文章阅读页：单栏+吸顶目录 (`content-blog-reading`)
+
+```json
+{
+  "id": "content-blog-reading",
+  "title": "博客文章阅读页：单栏+吸顶目录",
+  "category": "内容社交",
+  "styles": [
+    "博客",
+    "阅读页",
+    "长文"
+  ],
+  "scenario": "做博客/长文内容站，需要舒服的文章阅读页时",
+  "prompt": "Design a blog article reading page as a clean single-column reading view: a comfortable measure (around 65-75 characters per line), generous line spacing, warm serif headlines with clean sans-serif body text; a sticky table-of-contents sidebar that highlights the section currently in view as the reader scrolls; a reading-progress bar at the top, author bio block with avatar and follow button, estimated reading time and publish date under the title; at the end, share actions and a 'next article' card. Above the article, a full-width featured-article hero for the latest post, followed by a grid of recent posts with thumbnails, titles and excerpts. Editorial layout, strong spacing, no clutter around the text — reading is the product.",
+  "prompt_zh": "博客阅读页：单栏舒适行宽行距、衬线标题+无衬线正文、吸顶目录随滚动高亮当前节、顶部阅读进度条、作者简介与预计阅读时长，文首通栏精选文章+近期文章网格，阅读本身就是产品。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-19T09:12:00+08:00",
+  "source": "Medium《Top 10 Easy Prompts for Professional UI Design with designer-skill》第 6 条博客主页 + NotVibesCoded UI 提示词库博客类（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）"
+}
+```
+
+#### 活动票务：分区选座+订单汇总 (`event-ticket-seat-picker`)
+
+```json
+{
+  "id": "event-ticket-seat-picker",
+  "title": "活动票务：分区选座+订单汇总",
+  "category": "电商零售",
+  "styles": [
+    "票务",
+    "选座",
+    "活动"
+  ],
+  "scenario": "做演唱会/演出/赛事票务 App，需要选座购票流程时",
+  "prompt": "Design a mobile event ticketing flow in five steps: 1) Discover — event list with poster, date, venue and starting price; 2) Event detail — one screen with date, venue map, short description, and the starting price with a pinned 'Pick a seat' button at the bottom; 3) Pick a seat — a venue seat map with color-coded zones (one color per ticket type, matching the zone list), quantity steppers beside each zone, best-available seat suggestions ranked and shown as a short list, accessible and limited-view seats clearly marked; 4) Checkout — order summary showing ticket types, quantities, tax and total before payment, with a timed hold on the selected seats; 5) Ticket — each ticket its own card with barcode and booking ID, swipeable if bought for friends. Keep the flow to a few taps, prices honest, and the selected seats always visible on the map.",
+  "prompt_zh": "活动票务五步：发现（海报+日期+场馆+起价）→详情（单屏+底部固定选座）→选座（分区配色座位图+数量步进+最佳座位推荐+无障碍/视线受限标注）→结账（税费明细+限时锁座）→票据（每张票独立条码卡、可滑动）。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-19T09:12:00+08:00",
+  "source": "Ticko 票务 App 案例研究（sigalih.com）+ Showpass《Seating maps and assigned seating》选座地图指南（搜索结果原文核对；提示词按要点原创改写，同类收集，非原作摘录，2026-11-19）"
+}
+```
+
+## 2026-11-20 · 公开渠道新收集（5 条）
+
+来源核对：5 条原文均已打开核对，按要点改写（非逐字摘录）；与正式库 45 条 + 待验证区 51 条逐一去重，无重复。added_at 统一记本轮时间 2026-11-20T08:10:00+08:00。
+
+### 宠物领养滑动匹配 App (`mobile-pet-adoption-swipe`)
+
+```json
+{
+  "id": "mobile-pet-adoption-swipe",
+  "title": "宠物领养滑动匹配 App",
+  "category": "移动端App",
+  "styles": [
+    "滑动卡片",
+    "活泼",
+    "图片主导"
+  ],
+  "scenario": "宠物领养/收容所 App，用左右滑动匹配心仪宠物",
+  "prompt": "Design a mobile pet adoption app with a Tinder-style swipe experience: a stack of pet cards, each with a large pet photo, name, age, breed and a short funny one-line bio; drag a card left to pass or right to like — the card flies off with a slight rotation — or use the big heart and cross buttons below the stack. Liked pets go to a Matches tab; when both sides match, show a full-screen 'It's a match!' celebration with confetti and a 'Meet them' button. Add a Super Like star button that sends the card flying upward and marks the pet with a star in Matches. Warm, playful design: cream background, coral and amber accents, rounded 24px cards, friendly rounded type. Include filter chips (dog/cat, age, size) above the stack and a pet detail sheet (temperament, health status, shelter, adoption fee) on tap.",
+  "prompt_zh": "宠物领养滑动 App：左右滑动选宠物（照片+名字年龄品种+一句俏皮介绍），右滑喜欢进 Matches、双向匹配弹出庆祝屏，星标超喜欢可上滑飞出；顶部筛选 chips，点卡片看性格/健康/收容所/领养费详情，暖色活泼风。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-20T08:10:00+08:00",
+  "source": "Medium《I vibe coded Tinder for dogs in 2 minutes 38 seconds. Here is the exact prompt.》原文提示词核对改写，2026-11-20；https://medium.com/@ezzakyyy/i-vibe-coded-tinder-for-dogs-in-2-minutes-38-seconds-here-is-the-exact-prompt-0fd5d943328e"
+}
+```
+
+### 在线课程单节课播放页 (`edu-course-lesson-player`)
+
+```json
+{
+  "id": "edu-course-lesson-player",
+  "title": "在线课程单节课播放页",
+  "category": "移动端App",
+  "styles": [
+    "教育",
+    "视频播放",
+    "学习"
+  ],
+  "scenario": "在线教育 App 的单节课学习页（视频+笔记+讨论）",
+  "prompt": "Design a mobile online-course lesson screen: a 16:9 video player area on top with a large play button overlay, playback speed control and a progress bar with chapter markers; below it the lesson title, course name and instructor with avatar; a progress line 'Lesson 3 of 12' with a thin progress bar; a tab bar with four tabs — Overview, Notes, Resources, Discussion. Overview tab shows the lesson description, 3 key takeaways as bullets and a 'Next lesson' card; Notes tab has a timestamped note editor (tap a timestamp to jump the video); Resources tab lists downloadable files; Discussion tab shows a short Q&A thread. A sticky 'Mark Complete' button sits at the bottom. Clean academic design: white background, one deep-blue accent, readable 16px body text, generous spacing, no decorative gradients.",
+  "prompt_zh": "在线课程播放页：16:9 视频区带章节刻度进度条，下方课名/讲师/第 3/12 节进度，概览/笔记/资料/讨论四 tabs（笔记带时间戳可跳视频），底部吸底「标记完成」按钮，干净学术风。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-20T08:10:00+08:00",
+  "source": "GenDesigns《The Ultimate AI Design Prompt Library》第 103 条 iOS lesson/lecture screen 原文核对改写，2026-11-20；https://gendesigns.ai/blog/ai-design-prompt-library-100-prompts"
+}
+```
+
+### 健身房训练记录 App：动作库+组数+休息计时 (`mobile-gym-workout-logger`)
+
+```json
+{
+  "id": "mobile-gym-workout-logger",
+  "title": "健身房训练记录 App：动作库+组数+休息计时",
+  "category": "移动端App",
+  "styles": [
+    "健身",
+    "力量训练",
+    "深色"
+  ],
+  "scenario": "力量训练/去健身房时，边练边记录组数次数和组间休息",
+  "prompt": "Design a gym workout logger app for strength training: an exercise library screen with categories (Chest, Back, Legs, Arms) and filters, each exercise row showing name, muscle group and a small demo thumbnail; an active workout screen where the current exercise shows a large set table — set number, weight, reps — with tap-to-increment reps and quick weight stepper, a prominent rest timer between sets that counts down from 90s with a circular progress ring and auto-advances to the next set, and a big 'Finish set' button; a session summary with total volume, duration and personal records highlighted; a progress screen with weekly volume bar chart and strength trend lines. Dark theme with electric lime-green accent, huge glanceable numbers (reps/sets/time), minimum 56px tap targets, minimal typing — users are sweating and mid-workout. Distinct from a general health app: this is about logging sets and rest, not daily activity rings or sleep.",
+  "prompt_zh": "健身房训练记录：动作库按肌群分类筛选、训练中大字组数表（组/重量/次数点按递增）、90 秒组间休息计时圆环自动进下一组、练后总容量与 PR 汇总、周容量柱状图，深色+荧光绿大字大按钮，出汗时也能单手操作；与库里 mobile-health（日常活动圆环+睡眠）场景不同。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-20T08:10:00+08:00",
+  "source": "GenDesigns《Fitness App Design: Workout & Tracker UI with AI》Gym Workout Logger 原文提示词核对改写，2026-11-20；https://gendesigns.ai/design/fitness-app"
+}
+```
+
+### 房地产看房 App：AI 搜房+约看房 (`mobile-real-estate-viewing`)
+
+```json
+{
+  "id": "mobile-real-estate-viewing",
+  "title": "房地产看房 App：AI 搜房+约看房",
+  "category": "移动端App",
+  "styles": [
+    "房产",
+    "图片主导",
+    "简洁"
+  ],
+  "scenario": "找房/买房 App：搜房、看房源详情、预约实地看房",
+  "prompt": "Design a mobile real estate app for finding and viewing homes: a photo-led discovery home screen with large property photos, price, bedrooms, area and location on each card, plus filter chips for budget, bedrooms and must-haves and a map toggle that shows listings as pins; an AI-assisted search where the user describes their ideal home in plain words ('quiet, two bedrooms, near a park, under $400k'), the assistant asks one focused follow-up and turns the answer into editable criteria chips the user can review — no unexplained match scores; a property detail screen that presents the essentials first (price, rooms, area, amenities, neighbourhood notes) before a prominent 'Book a viewing' button; a short viewing flow asking for preferred date, time and visit type (in person / video call), ending on a confirmation screen that says the request was sent and the agent still needs to confirm. Warm minimal design: pale surfaces, rounded property cards, one warm-orange accent for primary actions, restrained typography, quiet and trustworthy.",
+  "prompt_zh": "房产看房 App：照片主导的房源发现+地图找房、说人话的 AI 搜房（追问一句后转成可编辑的条件 chips，不给玄学匹配分）、详情页先给关键信息再约看房、选日期时间与看房方式后确认待中介回复，米白底+暖橙强调色。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-20T08:10:00+08:00",
+  "source": "Luay AlRahahleh《Real Estate App UI/UX — Daira》设计概念原文核对，按要点改写（非逐字摘录），2026-11-20；https://luay.info/daira/"
+}
+```
+
+### 电商 AR 试穿：商品页试穿入口与试穿屏 (`ecom-ar-tryon-product`)
+
+```json
+{
+  "id": "ecom-ar-tryon-product",
+  "title": "电商 AR 试穿：商品页试穿入口与试穿屏",
+  "category": "电商零售",
+  "styles": [
+    "AR试穿",
+    "电商",
+    "转化"
+  ],
+  "scenario": "眼镜/美妆/配饰电商商品页，加 AR 虚拟试穿时",
+  "prompt": "Design an e-commerce product page with AR virtual try-on for glasses/cosmetics/accessories: in the product catalog, every try-on-enabled product card carries a visible 'Available for try-on' tag; on the product detail page, a clear high-contrast 'Try it on' button (mirror or brush icon + text, contrast at least 4.5:1) sits within 650px of the top of the screen, below but never overshadowing the 'Add to cart' button; tapping it opens the try-on screen where the product is applied to the live camera view immediately — no extra steps; the try-on screen keeps an 'Add to cart' button with price and size options visible so the user can buy without leaving; below the try-on area show a small recommendation row ('Recommended for you') suggesting the best-fitting products to avoid choice overload. Mobile-first layout, fast-loading compressed 3D assets, trust signals (ratings, returns policy) near the try-on area. Do not present the AR preview as proof of fit — keep the size chart visible.",
+  "prompt_zh": "电商 AR 试穿：可试穿商品卡带「可试穿」标签、详情页 650px 内放高对比「试一试」按钮（不抢加购按钮风头）、点开立即上脸不用多余步骤、试穿屏保留加购按钮与价格尺码、下方给少量推荐防选择困难，附尺码表不把预览当合身保证。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-20T08:10:00+08:00",
+  "source": "Banuba《Ecommerce UX & UI Design: How AR Try-On Improves Engagement and Sales》试穿 UI 最佳实践原文核对，按要点改写（非逐字摘录），2026-11-20；https://www.banuba.com/blog/ecommerce-ui-design-best-practices-for-augmented-reality"
 }
 ```

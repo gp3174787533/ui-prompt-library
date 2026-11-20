@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "categories": [
   "AI产品",
   "SaaS后台",
@@ -1028,6 +1028,123 @@
    },
    "added_at": "2026-11-17T20:30:00+08:00",
    "source": "费纸张抖音第3集《5个小细节》细节4（已核对原视频，2026-11-17）"
+  },
+  {
+   "id": "landing-swiss-minimal",
+   "title": "瑞士极简网格官网",
+   "category": "落地页官网",
+   "styles": [
+    "瑞士极简",
+    "网格",
+    "黑白"
+   ],
+   "scenario": "设计工作室/建筑/文化机构官网",
+   "prompt": "Restyle this website in a minimal Swiss International style: strict 12-column grid with visible alignment, one sans-serif typeface (Helvetica/Inter) in only two weights (regular and bold), near-black text #111111 on off-white #FAFAF8, one red accent #E30613 used only for primary actions and section numbers. No shadows, no gradients, no rounded corners, no decorative icons. Oversized left-aligned headlines, generous margins, hairline rules to separate sections, everything snaps to the grid.",
+   "prompt_zh": "瑞士极简：严格 12 栏网格、一种无衬线字体只用两档字重、近黑配米白、红色只给主操作，无阴影无渐变无圆角。",
+   "tools": [
+    "v0",
+    "Framer",
+    "Cursor"
+   ],
+   "group": {
+    "id": "landing-styles",
+    "name": "落地页官网 · 风格组"
+   },
+   "variant_label": "瑞士极简网格",
+   "preview_img": "previews/landing-swiss-minimal.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-20",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为设计工作室官网：严格网格线可见、一种无衬线字体、近黑配米白、红色只用于主 CTA 与章节编号 02/03、超大左对齐标题、细线分隔、无阴影无渐变无圆角，通过"
+   },
+   "added_at": "2026-11-17T09:12:00+08:00",
+   "source": "Questera《AI Prompts for Beautiful UI Designs》瑞士极简模板（2026-11-17 已打开核对原文，按统一格式改写，非逐字摘录）"
+  },
+  {
+   "id": "detail-liquid-glass",
+   "title": "液态玻璃：五要素材质配方",
+   "category": "细节优化",
+   "styles": [
+    "液态玻璃",
+    "玻璃拟态",
+    "iOS"
+   ],
+   "scenario": "卡片/导航/弹窗想要 Apple Liquid Glass 质感时",
+   "prompt": "Apply a true Liquid Glass material, not plain blur: every glass panel needs all five properties together — (1) backdrop-blur-xl, (2) translucent fill bg-white/10 on dark or bg-black/5 on light, (3) 1px border border-white/20 to define the edge, (4) soft shadow-xl for depth, and (5) a specular highlight via ring-1 ring-inset ring-white/10 plus a bg-gradient-to-br from-white/20 to transparent overlay so light catches one edge. Keep text on a solid backing or dark enough area so contrast stays at least 4.5:1; without the highlight it is just frosted glass, not liquid glass.",
+   "prompt_zh": "液态玻璃五要素缺一不可：强模糊+半透明填充+1px 亮边+柔和阴影+高光描边，文字区保 4.5:1 对比度，只有模糊不算液态玻璃。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/detail-liquid-glass.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-20",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为音乐播放器：播放卡片/音量胶囊/底部导航三块玻璃面板均带强模糊+半透明填充+1px 亮边+柔和阴影+边缘高光，文字区对比清晰，通过（底部 Library 图标造型略怪，不影响玻璃材质呈现）"
+   },
+   "added_at": "2026-11-17T09:12:00+08:00",
+   "source": "TemplatesCenter《liquid-glass-ui-prompts-20-templates-that-work》液态玻璃五要素配方（2026-11-17 已打开核对原文，按统一格式改写，非逐字摘录）"
+  },
+  {
+   "id": "landing-pricing-saas",
+   "title": "SaaS 定价页三档对比",
+   "category": "落地页官网",
+   "styles": [
+    "定价",
+    "转化",
+    "卡片"
+   ],
+   "scenario": "SaaS 订阅产品定价页",
+   "prompt": "Design a SaaS pricing page with 3 tiers (Starter, Pro, Team): short headline plus a monthly/annual toggle at the top with annual showing a 'Save 20%' badge; three equal-width cards with 24px gaps, the middle Pro card highlighted as 'Most Popular' with a colored border, slightly larger scale and a badge; each card shows plan name, price with billing period, one-line who-it-is-for, a primary CTA, and a feature checklist with checkmarks (unavailable features grayed out, not hidden). Below add a full feature-comparison table and an FAQ accordion. Background #FAFAF9, cards white with 1px border #E7E5E4, text #1C1917, one accent color only. No dark patterns, no hidden pricing.",
+   "prompt_zh": "SaaS 定价页：月/年切换带省 20% 徽章、三卡等宽中间档高亮为最受欢迎、每卡含人群说明+功能清单、下方对比表+FAQ，无暗黑套路。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/landing-pricing-saas.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-20",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为 Forgeflow 定价页：月/年切换带 Save 20% 徽章、三卡等宽、Pro 卡 Most Popular 彩色边框微放大高亮、每卡人群说明+功能清单（不可用项灰显）、下方功能对比表齐全，通过"
+   },
+   "added_at": "2026-11-17T09:12:00+08:00",
+   "source": "Superdesign《UI Design Prompts》定价页模板（2026-11-17 已打开核对原文，按统一格式改写，非逐字摘录）"
+  },
+  {
+   "id": "detail-sidebar-polish",
+   "title": "费纸张：精致侧边栏优化（原作版）",
+   "category": "细节优化",
+   "styles": [
+    "侧边栏",
+    "原作摘录",
+    "间距圆角"
+   ],
+   "scenario": "已有侧边栏显粗糙时，不改内容配色只做精修",
+   "prompt": "Refine this sidebar without changing its content, colors or interactions: keep the existing style; unify font sizes, corner radii and spacing; panels at the same level share the same radius, consistent with neighbouring panels; equal whitespace on both sides of the sidebar; icons slightly smaller than text with consistent icon-text gaps; every row fits its text with enough vertical padding and a generously sized click target; spacing between groups larger than spacing within groups, all following one spacing scale.",
+   "prompt_zh": "费纸张第4集原作提示词：保留内容/配色/交互，统一字号圆角间距，同级面板圆角一致、两侧留白一致，图标小于文字、图文间距一致，每行留白与点击区域足够，组间比组内松。",
+   "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+   ],
+   "preview_img": "previews/detail-sidebar-polish.png",
+   "preview_type": "static",
+   "verified": {
+    "date": "2026-11-20",
+    "method": "按提示词实际生成 UI 效果图并逐张目检",
+    "result": "pass",
+    "note": "生成图为 AnalyticsPro 后台：侧边栏字号圆角统一、同级面板圆角一致、两侧留白一致、图标小于文字且图文间距一致、分组间距大于组内间距、每行留白与点击区充足，通过（主区图表 Y 轴刻度有重复小瑕疵，不影响侧边栏精修呈现）"
+   },
+   "added_at": "2026-11-17T22:15:10+08:00",
+   "source": "费纸张抖音（已登录核对原文，2026-11-17）"
   }
  ]
 }
