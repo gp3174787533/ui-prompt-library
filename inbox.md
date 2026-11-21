@@ -47,106 +47,6 @@
 
 ### 本批新增待验证条目（13 条）
 
-#### 费纸张：玻璃界面五步配方（原作版） (`detail-glassmorphism-five`)
-
-```json
-{
-  "id": "detail-glassmorphism-five",
-  "title": "费纸张：玻璃界面五步配方（原作版）",
-  "category": "细节优化",
-  "styles": [
-    "玻璃拟态",
-    "原作摘录",
-    "材质"
-  ],
-  "scenario": "想要有层次的玻璃拟态（glassmorphism）界面时",
-  "prompt": "Create a layered glassmorphism surface in five steps: 1) blur — backdrop-filter blur(28px); 2) saturate — saturate(170%) to enrich the colors behind; 3) overlay white — background rgb(255 255 255 / 10%); 4) bright edge — inset box-shadow 1px 1px 0 rgba(255,255,255,0.4) for a lit rim; 5) refraction — an SVG displacement filter on the edge. Choose background shapes, colors and brightness deliberately so the glass stays translucent while text remains readable. Base CSS: .glass { backdrop-filter: blur(28px) saturate(170%); background: rgb(255 255 255 / 10%); box-shadow: inset 1px 1px 0 #fff6; }",
-  "prompt_zh": "费纸张第1集原作五步：模糊→增色→叠白→亮边→折射，附最终 .glass 代码（blur 28px / saturate 170% / 白 10% / inset 亮边），并强调背景形状配色明暗与文字可读性。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-17T22:15:10+08:00",
-  "source": "费纸张抖音（已登录核对原文，2026-11-17）"
-}
-```
-
-#### 费纸张：卡片滚轮滚动五槽位（原作版） (`detail-card-scroll-slots`)
-
-```json
-{
-  "id": "detail-card-scroll-slots",
-  "title": "费纸张：卡片滚轮滚动五槽位（原作版）",
-  "category": "细节优化",
-  "styles": [
-    "动效",
-    "卡片滚动",
-    "原作摘录"
-  ],
-  "scenario": "做卡片轮播/滚动切换、想要滚轮般流畅感时（动效类）",
-  "prompt": "Build a fluid card-scrolling effect modelled as a wheel with five fixed slots that control each card's position, height, opacity and blur: hidden -2, capsule -1, expanded 0, capsule +1, hidden +2. The bottom card wraps back to the top when hidden. Handle the header bar, content fade in/out and motion blur during movement. Content can change freely; the slots never change.",
-  "prompt_zh": "费纸张原作：把卡片滚动看成滚轮，五个固定槽位（隐藏-2/胶囊-1/展开0/胶囊+1/隐藏+2）控制位置/高度/透明度/模糊，最下卡片隐藏时绕回顶部，内容可换、槽位不变。动效类，验证需 GIF。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-17T22:15:10+08:00",
-  "source": "费纸张抖音（已登录核对原文，2026-11-17）"
-}
-```
-
-#### 费纸张：卡片三改（原作版） (`detail-card-three-fixes`)
-
-```json
-{
-  "id": "detail-card-three-fixes",
-  "title": "费纸张：卡片三改（原作版）",
-  "category": "细节优化",
-  "styles": [
-    "卡片",
-    "原作摘录",
-    "对比改版"
-  ],
-  "scenario": "数据卡片（如步数/统计卡）显平庸时的小改版",
-  "prompt": "Improve this data card with three small changes, keeping the data identical: 1) highlight only 'today' (the current item) and mute the rest; 2) replace the border with a soft tinted background fill; 3) add a smooth transition to the switch/toggle interaction.",
-  "prompt_zh": "费纸张原作（步数卡片 8,214 步示例）：只突出「今天」、用柔和底色代替边框、给切换加平滑过渡；数据不变，观感更舒服。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-17T22:15:10+08:00",
-  "source": "费纸张抖音（已登录核对原文，2026-11-17）"
-}
-```
-
-#### 费纸张：侧边栏高亮动效规则（原作版） (`detail-sidebar-motion`)
-
-```json
-{
-  "id": "detail-sidebar-motion",
-  "title": "费纸张：侧边栏高亮动效规则（原作版）",
-  "category": "细节优化",
-  "styles": [
-    "动效",
-    "侧边栏",
-    "原作摘录"
-  ],
-  "scenario": "侧边栏选中高亮动画跨组乱滑、扫过无关项时（动效类）",
-  "prompt": "Sidebar selection motion rules: interaction feedback animations last 150-250ms; the selected highlight slides only within the same group; when selection crosses to another group it fades out and in instead of sliding; use distinct view-transition-name values per group so the browser never animates the highlight across groups or over unrelated items.",
-  "prompt_zh": "费纸张第7集原作动效规则：反馈动效 150–250ms；高亮仅组内滑动，跨组淡入淡出；用不同的 view-transition-name 区分分组。动效类，验证需 GIF。",
-  "tools": [
-    "v0",
-    "Lovable",
-    "Cursor"
-  ],
-  "added_at": "2026-11-17T22:15:10+08:00",
-  "source": "费纸张抖音（已登录核对原文，2026-11-17）"
-}
-```
-
 #### 费纸张：十种选择控件用法（原作版） (`detail-choice-controls`)
 
 ```json
@@ -1510,5 +1410,253 @@
   ],
   "added_at": "2026-11-20T08:10:00+08:00",
   "source": "Banuba《Ecommerce UX & UI Design: How AR Try-On Improves Engagement and Sales》试穿 UI 最佳实践原文核对，按要点改写（非逐字摘录），2026-11-20；https://www.banuba.com/blog/ecommerce-ui-design-best-practices-for-augmented-reality"
+}
+```
+
+## 2026-11-20 · 公开渠道收集（Achraf Arabi 22 风格库 / Medium 加载态实测 / n8n 工作流画布）
+
+来源核对：黏土拟态、Y2K、像素风三条模板已打开 Achraf Arabi《22 website style prompts》原文核对（2026-11-20），按模板要点改写为库内统一格式，非逐字摘录；骨架屏条目据 Medium《Loading Screen UI for AI Builders and Vibe Coders》eBay 骨架屏示例原文提示词核对改写；工作流画布条目据 n8n 官方文档与 Neuraui Flow 组件文档搜索结果核对节点模型，提示词原创，标注「同类收集，非原作摘录」。以上 5 条均为库里没有的风格/场景（黏土拟态、Y2K、像素风、骨架屏加载、智能体工作流画布），其中 3 条落地页风格按 2026-11-17 定规并入已有 landing-styles 风格组作新 variant，只进待验证区。
+
+### 本批新增待验证条目（5 条）
+
+#### 黏土拟态落地页 (`landing-claymorphism`)
+
+```json
+{
+  "id": "landing-claymorphism",
+  "title": "黏土拟态落地页",
+  "category": "落地页官网",
+  "styles": [
+    "黏土拟态",
+    "柔和立体",
+    "落地页"
+  ],
+  "scenario": "儿童、游戏、健康类产品落地页想要柔软可触的黏土质感时",
+  "prompt": "Design a landing page in Claymorphism style: everything looks like soft, inflated modelling clay you could press with a finger. Layout: a centred hero with one large matte 3D clay object beside the headline, then floating cards with at least 32px of space between them and few elements per section. Type: Fredoka semi-bold for headings (48-72px), Nunito for body, rounded letterforms only. Colour: pale base #F4EEFF, three pastel accents — pink #FFB8D9, mint #A8E6CF, periwinkle #B5C7FF — text in deep plum #2B2340, never pure black; the primary button uses the strongest pastel. Surfaces: corner radius 28-40px on everything; every card uses the same three shadows — a soft drop shadow (0 18px 40px at 18% opacity), an inner highlight at the top left (inset 6px 6px 12px white at 70%) and an inner shade at the bottom right (inset -8px -8px 16px black at 8%); no borders. Images: matte 3D clay renders, one per section, all lit from the same side. Motion: the hero object floats 6-8px on a slow 4-second loop; buttons squash to 96% when pressed and spring back; cards rise 4px on hover. One primary action per screen, body text at least 16px with 4.5:1 contrast, Lucide icons only, no emoji; respect prefers-reduced-motion.",
+  "prompt_zh": "黏土拟态落地页：#F4EEFF 淡底+三色粉彩、圆角 28–40px、每张卡同一组三重阴影（外投影+左上内高光+右下内暗角）、无边框，3D 黏土物 4 秒缓浮、按钮按压缩 96% 回弹。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Framer"
+  ],
+  "group": {
+    "id": "landing-styles",
+    "name": "落地页官网 · 风格组"
+  },
+  "variant_label": "黏土拟态",
+  "added_at": "2026-11-20T09:15:00+08:00",
+  "source": "Achraf Arabi《22 website style prompts》Claymorphism 模板原文核对，按要点改写（非逐字摘录），2026-11-20；https://www.achref.dev/resources/style-prompts"
+}
+```
+
+#### Y2K 液态铬落地页 (`landing-y2k-chrome`)
+
+```json
+{
+  "id": "landing-y2k-chrome",
+  "title": "Y2K 液态铬落地页",
+  "category": "落地页官网",
+  "styles": [
+    "Y2K",
+    "液态铬",
+    "复古未来"
+  ],
+  "scenario": "时尚、美妆、音乐、Z 世代产品落地页想要 2000 年千禧复古未来感时",
+  "prompt": "Design a landing page in Y2K aesthetic: the year-2000 internet — glossy bubbles, iridescent stickers, pixel type and pop-up windows. Layout: a playful hero with one big glossy word, sticker elements around it, and content inside retro 'window' frames with blue title bars and small square buttons. Type: Syne extra-bold for headings, DM Sans for body, Silkscreen only for tiny pixel labels and tags. Colour: baby pink #FFB3DE, baby blue #A6D8FF, lilac #CBB6FF, chrome silver and white; iridescent gradients only on stickers, never behind text. Surfaces: glossy pill buttons with a white highlight ellipse on top; sticker shapes (stars, hearts, butterflies) with a white outline. Images: flash-photography portraits and products, chrome hearts and stars, iridescent 3D bubbles. Motion: stickers twinkle and bob in place; buttons bounce on hover; one thin marquee band of text. One primary action per screen, body text at least 16px with 4.5:1 contrast, Lucide icons only, no emoji; respect prefers-reduced-motion.",
+  "prompt_zh": "Y2K 液态铬落地页：粉蓝紫+铬银、Syne 粗体标题+Silkscreen 像素小标签、光泽药丸按钮配白色高光椭圆、内容装进复古蓝标题栏窗口、贴纸星星爱心白边闪烁浮动，彩虹渐变只用在贴纸上不垫正文。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Framer"
+  ],
+  "group": {
+    "id": "landing-styles",
+    "name": "落地页官网 · 风格组"
+  },
+  "variant_label": "Y2K液态铬",
+  "added_at": "2026-11-20T09:15:00+08:00",
+  "source": "Achraf Arabi《22 website style prompts》Y2K Aesthetic 模板原文核对，按要点改写（非逐字摘录），2026-11-20；https://www.achref.dev/resources/style-prompts"
+}
+```
+
+#### 像素风落地页 (`landing-pixel-art`)
+
+```json
+{
+  "id": "landing-pixel-art",
+  "title": "像素风落地页",
+  "category": "落地页官网",
+  "styles": [
+    "像素风",
+    "复古游戏",
+    "8-bit"
+  ],
+  "scenario": "游戏、开发者工具、黑客松、复古品牌落地页想要 8-bit 像素游戏感时",
+  "prompt": "Design a landing page in Pixel Art style: an interface straight out of a retro game — chunky pixels, dialog boxes and sprites. Layout: an 8px grid for everything; a hero with a pixel scene and a dialog box carrying the headline; menus styled like game menus; stats shown as health bars. Type: Pixelify Sans for headings, Space Mono for body so long text stays readable; pixel fonts only at their designed sizes, never stretched. Colour: one limited palette of at most 16 colours (for example PICO-8: #1D2B53, #7E2553, #008751, #FFA300, #FFEC27, #29ADFF, #FF77A8, #FFF1E8); no colours outside it. Surfaces: square corners, borders built from 4px pixel steps, buttons with a pixel bevel (light top-left, dark bottom-right); no radius, no blur. Images: pixel sprites and scenes made at a small size and scaled up by whole numbers (2x, 3x, 4x) with image-rendering: pixelated, never smooth-scaled. Motion: the hero sprite plays an idle animation at about 8 frames per second in steps; buttons move 4px down when pressed; dialog text types in letter by letter. One primary action per screen, body text at least 16px with 4.5:1 contrast, Lucide icons only, no emoji; respect prefers-reduced-motion.",
+  "prompt_zh": "像素风落地页：8px 网格、PICO-8 限色 16 色内、方角+4px 像素阶梯边框+像素斜面按钮、精灵按整数倍放大（pixelated 不模糊缩放）、主角 8fps 逐帧待机动画、对话框逐字打出。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Framer"
+  ],
+  "group": {
+    "id": "landing-styles",
+    "name": "落地页官网 · 风格组"
+  },
+  "variant_label": "像素风",
+  "added_at": "2026-11-20T09:15:00+08:00",
+  "source": "Achraf Arabi《22 website style prompts》Pixel Art 模板原文核对，按要点改写（非逐字摘录），2026-11-20；https://www.achref.dev/resources/style-prompts"
+}
+```
+
+#### 骨架屏加载占位 (`detail-skeleton-loading`)
+
+```json
+{
+  "id": "detail-skeleton-loading",
+  "title": "骨架屏加载占位",
+  "category": "细节优化",
+  "styles": [
+    "骨架屏",
+    "加载态",
+    "微光"
+  ],
+  "scenario": "页面数据加载时，不想只转圈、想先露出页面轮廓时",
+  "prompt": "Add a skeleton loading state to this page: render the real header, search bar and bottom navigation immediately — only the data-driven parts load. While content is fetching, show skeleton placeholders with the exact layout of the real content: a row of pill-shaped chips, then a grid of rounded image blocks with two short text lines under each, using the same spacing as the real cards. Use a soft shimmer sweep (about 1.4s, left to right, staggered per column by 150ms so it reads as a wave, not a synchronized blink) and swap each placeholder for its real card as data arrives so nothing shifts. If the wait is driven by an AI feature, add a status line with a sparkle icon and a specific message ('Finding the best options...') above a skeleton list that matches the final row layout. Mark the loading region aria-busy='true' and replace the shimmer with a static 60% opacity fill under prefers-reduced-motion. Use a skeleton only when the final shape is known; use a spinner for short actions where the layout does not change.",
+  "prompt_zh": "骨架屏加载：先渲染真实页眉/搜索/底栏，只给数据区做与真实内容同尺寸同间距的灰块占位、1.4 秒柔和微光按列错峰扫过、数据一到逐块替换不跳动；AI 任务加一句具体状态文案，减动效时改静态填充。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-20T09:15:00+08:00",
+  "source": "Medium《Loading Screen UI for AI Builders and Vibe Coders》eBay 骨架屏示例原文提示词核对，按要点改写（非逐字摘录），2026-11-20；https://medium.com/codetodeploy/loading-screen-ui-for-ai-builders-and-vibe-coders-12-real-app-examples-with-copy-paste-prompts-84d3eefea25d"
+}
+```
+
+#### AI 智能体工作流画布 (`ai-agent-workflow-canvas`)
+
+```json
+{
+  "id": "ai-agent-workflow-canvas",
+  "title": "AI 智能体工作流画布",
+  "category": "AI产品",
+  "styles": [
+    "工作流画布",
+    "节点编辑器",
+    "智能体"
+  ],
+  "scenario": "做 n8n 风格的 AI 智能体工作流搭建器、节点连线画布界面时",
+  "prompt": "Design an AI agent workflow builder with a node-based canvas: a large dotted-grid canvas where users drag nodes and connect them with curved edges — Trigger nodes (manual, webhook, schedule, new email) start a flow, Action nodes call models or apps, Logic nodes (IF, Switch, Filter) branch the path, and AI Agent nodes let an LLM plan and call tools. Each AI Agent node shows its sub-nodes underneath: a Chat Model (provider + model picker), an optional Memory node (session-based), and one or more Tool nodes (web search, calculator, email, database). Canvas interactions: pan by dragging empty space, zoom around the pointer, minimap with a draggable viewport box, snap-to-grid, multi-select and group. Running state: each node shows live status (idle / running / done / error) with animated data dots travelling along active edges, plus a side execution log panel listing each step's input and output. Safety: insert a human approval step before any node that sends a message, writes to a database, deletes data or spends money; the run pauses there until approved. Clean light theme, one accent colour for the active path, monospace labels for node types, zoom controls and a 'Test workflow' button in the top bar.",
+  "prompt_zh": "AI 智能体工作流画布：触发器/动作/逻辑/AI Agent 节点拖拽连线（Agent 节点下挂模型+记忆+工具子节点），平移缩放+小地图+吸附网格，运行时节点亮状态、数据点沿连线流动、侧栏执行日志，凡发消息/写库/删除/花钱的节点前必须插人工审批。",
+  "tools": [
+    "v0",
+    "Lovable",
+    "Cursor"
+  ],
+  "added_at": "2026-11-20T09:15:00+08:00",
+  "source": "同类收集，非原作摘录（节点模型据 n8n 官方文档与 Neuraui Flow 组件文档搜索结果核对，提示词原创，2026-11-20）"
+}
+```
+
+## 2026-11-21 · 公开渠道收集（番茄钟/习惯打卡/睡眠呼吸/智能手表表盘）
+
+### 番茄钟专注计时：番茄倒计时环+四节进度点 (`mobile-pomodoro-timer`)
+
+```json
+{
+ "id": "mobile-pomodoro-timer",
+ "title": "番茄钟专注计时：番茄倒计时环+四节进度点",
+ "category": "效率工具",
+ "styles": [
+  "专注",
+  "番茄钟",
+  "效率工具"
+ ],
+ "scenario": "做专注计时/番茄钟界面，希望倒计时本身就是视觉主角时",
+ "prompt": "Design a Pomodoro focus timer widget for a desktop focus app or dashboard corner: a cream card with a 2.5px brown outline and a hard 8px offset shadow, like a sticker. The countdown ring IS the tomato — a thick red ring with a green star-shaped calyx and stem on top at 12 o'clock; the ring empties clockwise as time runs down. Three modes (Focus 25, Short break 5, Long break 15) recolour the ring: tomato red for focus, leaf green for breaks. Four session dots under the controls show progress through a set. First frame mid-session and running: Focus mode, 17:24 remaining, label \"Focus · 2 of 4\", first dot filled, second dot ringed as current, \"Next: short break · 5 min\", \"Today: 50 min focused\". Big centre button toggles Start/Pause.",
+ "prompt_zh": "番茄钟计时器：倒计时环本身就是一颗番茄（红色粗环+顶部绿色星形萼片），专注 25/短休 5/长休 15 三档换色，下方 4 个进度点标示一轮进度；奶油卡片+棕色粗描边+硬阴影贴纸风，首帧为专注进行中 17:24。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-21T08:11:00+08:00",
+ "source": "Design Lounge《Tomato pomodoro timer widget》brief（2026-11-21 已打开核对原文，按要点改写，非逐字摘录）"
+}
+```
+
+### 习惯打卡：今日一键打卡+连续记录+热力图 (`mobile-habit-tracker`)
+
+```json
+{
+ "id": "mobile-habit-tracker",
+ "title": "习惯打卡：今日一键打卡+连续记录+热力图",
+ "category": "效率工具",
+ "styles": [
+  "习惯",
+  "打卡",
+  "连续记录"
+ ],
+ "scenario": "做习惯养成 App，希望打卡快到打开即点、进度一眼可见时",
+ "prompt": "Design a habit tracker app for people building 3 to 5 daily habits. Today screen: a list of today's habits, each with one large tap target (at least 44x44pt) and its current streak with a flame; one tap marks complete with a small satisfying fill animation — no confirmation step. Habit detail screen: current and longest streak, a monthly heatmap calendar of past weeks, completion rate and reminder settings, with three distinguishable states (done / not yet / missed) carried by shape and fill, not colour alone. Add-habit form kept short: name, frequency (every day, specific days, or N times a week), reminder time, optional icon or colour. Weekly stats screen: completion rates and streaks only. Calm and encouraging tone, never shaming; a missed day does not reset progress harshly — offer skip days or a streak freeze.",
+ "prompt_zh": "习惯打卡 App：今日页每条习惯一个大号一键打卡目标+连续天数火焰标，打卡有点亮填充小动画无需确认；详情页有月热力图与最长连续记录，未做/未到/漏做三种状态用形状+填充区分而不只靠颜色；语气平静鼓励、不羞辱，漏打卡不粗暴清零。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-21T08:11:00+08:00",
+ "source": "Outclass《Habit tracker app design: screens and patterns》+ greta.sh 单提示词（2026-11-21 已打开核对原文，按要点改写，非逐字摘录）"
+}
+```
+
+### 睡眠呼吸助眠屏：4-7-8 呼吸光球+环形时长拨盘 (`mobile-sleep-breath`)
+
+```json
+{
+ "id": "mobile-sleep-breath",
+ "title": "睡眠呼吸助眠屏：4-7-8 呼吸光球+环形时长拨盘",
+ "category": "移动端App",
+ "styles": [
+  "睡眠",
+  "呼吸",
+  "助眠"
+ ],
+ "scenario": "做睡眠 App 的睡前放松屏，希望一屏只做呼吸引导、慢慢淡出时",
+ "prompt": "Design the wind-down screen of a sleep app called Hushwell: one rich material — a lit breathing sphere — sits on near-black. The orb swells and shrinks through a 4-7-8 breath (4 seconds in, 7 held, 8 out) and its colours follow the hour: moonlit silver-blue at night, amber at dusk, peach at dawn, pale gold by day. A thin 300° ring around the orb doubles as the session dial: drag its ivory knob from 5 to 45 minutes and the end time updates beneath. Three sound chips (Rain, Brown noise, Harbour). Start lets the chrome dissolve over 1.4 seconds, leaving only the orb, the breath cue, a remaining time and one quiet \"End session\"; in the last stretch the screen, the orb and the sound fade down together. iOS-style restraint: serif italics for the voice, a grotesk for the facts, one primary button. Initial state: 21:30 · Night, dial set to 20 minutes, \"20 min · ends 21:50\", Rain selected.",
+ "prompt_zh": "睡眠助眠屏：近黑底上一颗发光呼吸球做 4-7-8 呼吸（吸 4/屏 7/呼 8），颜色随夜/暮/晨/昼变化；球外 300° 细环是时长拨盘（5–45 分钟拖动），配雨声/白噪音/海港三枚音效芯片；开始后界面 1.4 秒淡出只剩呼吸球与剩余时间，结尾一起淡暗。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-21T08:11:00+08:00",
+ "source": "Design Lounge《Sleep breath wind-down》brief（2026-11-21 已打开核对原文，按要点改写，非逐字摘录）"
+}
+```
+
+### 智能手表表盘：Matrix 数字雨+时间电量心率 (`wearable-watchface-matrix`)
+
+```json
+{
+ "id": "wearable-watchface-matrix",
+ "title": "智能手表表盘：Matrix 数字雨+时间电量心率",
+ "category": "智能穿戴",
+ "styles": [
+  "智能穿戴",
+  "表盘",
+  "赛博"
+ ],
+ "scenario": "做智能手表表盘，希望一眼可读又有强烈主题氛围时",
+ "prompt": "Design a smartwatch face in the style of the Matrix digital rain: green katakana characters pour down the screen in columns from the top, columns starting at random times and falling at different speeds, a white leading character in each column with a tail that fades through three greens. The rain washes away the battery and heart rate readouts as it passes, with the time showing through clearly. Battery icon shows the charge level and a heart icon replaces text labels for heart rate. The rain starts the moment the wrist is raised and runs for as long as the screen stays on. Treat the face as a mini dashboard: keep hierarchy readable at a glance on a small round display (416×416), bold silhouettes, minimal text, strong contrast, no hairline strokes or busy textures.",
+ "prompt_zh": "智能手表 Matrix 数字雨表盘：绿色片假名雨柱自顶部落下、各列随机起落速度不一，每列首字白色、尾迹三档绿色渐隐；雨水漫过电量与心率读数、时间始终清晰；电池与心率改用图标而非文字，抬腕即开始下雨。",
+ "tools": [
+  "v0",
+  "Lovable",
+  "Cursor"
+ ],
+ "added_at": "2026-11-21T08:11:00+08:00",
+ "source": "the5krunner《How to Make A Garmin Watch Face With Claude》（2026-11-21 已打开核对原文，按要点改写，非逐字摘录）+ CapCut《AI Image for Wearables》表盘可读性要点"
 }
 ```
